@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="271.3280563724958" y="307.2609105084354">ar.edu.ort.clases.EmpleadoComision</node>
+    <node x="112.59638582398765" y="915.27367065208">ar.edu.ort.clases.EmpleadoFijo</node>
+    <node x="299.5845821119214" y="0.0">ar.edu.ort.clases.Cliente</node>
+    <node x="334.36500810360184" y="597.1986466520029">ar.edu.ort.clases.Empleado</node>
+    <node x="0.0" y="1151.098180961287">ar.edu.ort.clases.Antiguedad</node>
+    <node x="683.045566403788" y="35.857258645561615">ar.edu.ort.clases.Aplicacion</node>
+    <node x="929.3693551920679" y="195.81637761405705">ar.edu.ort.clases.Empresa</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.EmpleadoComision" target="ar.edu.ort.clases.Empleado" relationship="GENERALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Aplicacion" target="ar.edu.ort.clases.Empleado" relationship="DEPENDENCY">
+      <point x="-8.372017434037673" y="-0.0" />
+      <point x="0.0" y="6.233855851305975" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoFijo" target="ar.edu.ort.clases.Empleado" relationship="GENERALIZATION">
+      <point x="0.0" y="-0.0" />
+      <point x="0.0" y="-0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoComision" target="ar.edu.ort.clases.Cliente" relationship="TO_MANY">
+      <point x="4.972425622211171" y="-0.5243886264764309" />
+      <point x="4.972425622211169" y="-0.5243886264764228" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Aplicacion" relationship="TO_ONE">
+      <point x="-8.372017434037673" y="-0.0" />
+      <point x="-8.372017434037502" y="-0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoFijo" target="ar.edu.ort.clases.Antiguedad" relationship="DEPENDENCY">
+      <point x="-4.010359013155949" y="-2.986138072092217" />
+      <point x="-4.010359013155949" y="-2.986138072092217" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Aplicacion" relationship="DEPENDENCY">
+      <point x="2.986138072092217" y="-4.010359013155949" />
+      <point x="2.986138072092274" y="-4.010359013155949" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoFijo" target="ar.edu.ort.clases.Antiguedad" relationship="TO_ONE">
+      <point x="6.233855851305975" y="-0.0" />
+      <point x="6.233855851305975" y="-0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Aplicacion" target="ar.edu.ort.clases.Empleado" relationship="TO_MANY">
+      <point x="2.986138072092274" y="-4.010359013155949" />
+      <point x="2.9861380720922597" y="-4.010359013155949" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoComision" target="ar.edu.ort.clases.Cliente" relationship="CREATE">
+      <point x="-5.0277272903446315" y="0.0" />
+      <point x="-5.027727290344636" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Circular" zoom="0.6669201520912548" showDependencies="true" x="507.4999999999999" y="647.5" />
+  <SelectedNodes>
+    <node>ar.edu.ort.clases.Aplicacion</node>
+    <node>ar.edu.ort.clases.Empresa</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
