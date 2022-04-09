@@ -14,7 +14,7 @@ public class Video extends Multimedia {
 
     @Override
     public String toString() {
-        return "Video [alto=" + super.toString() + ", ancho=" + ancho + ", formato=" + formato + "]";
+        return "Video [alto=" + super.toString() + ", ancho=" + ancho + ", alto=" + alto + ", formato=" + formato + "]";
     }
 
 }
