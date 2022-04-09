@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="911.3290951850317" y="-23.7343215507411">ar.edu.ort.clases.Descuento</node>
+    <node x="464.1278409090909" y="76.99999999999997">ar.edu.ort.clases.Cabina</node>
+    <node x="640.1986843923845" y="495.56841505131126">ar.edu.ort.clases.Efectivo</node>
+    <node x="799.0476011540721" y="322.685290763968">ar.edu.ort.clases.MedioPago</node>
+    <node x="219.33694412770814" y="277.68529076396806">ar.edu.ort.clases.Vehiculo</node>
+    <node x="911.3290951850319" y="801.3911060433295">ar.edu.ort.clases.Sube</node>
+    <node x="881.6954526018451" y="601.0017103762827">ar.edu.ort.clases.PagoElectronico</node>
+    <node x="419.50427162157496" y="-187.44583808437858">ar.edu.ort.clases.Estacion</node>
+    <node x="609.1264674251065" y="801.3911060433295">ar.edu.ort.clases.Pase</node>
+    <node x="224.33694412770814" y="497.68529076396806">ar.edu.ort.clases.Categoria</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Estacion" target="ar.edu.ort.clases.Cabina" relationship="TO_MANY">
+      <point x="6.62356928751592" y="105.0" />
+      <point x="0.0" y="-149.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Efectivo" target="ar.edu.ort.clases.MedioPago" relationship="GENERALIZATION">
+      <point x="3.1560761544824345E-4" y="49.99958494868872" />
+      <point x="736.699" y="617.0" />
+      <point x="875.048" y="617.0" />
+      <point x="3.988459278616574E-4" y="38.499709236032004" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.Descuento" relationship="DEPENDENCY">
+      <point x="93.5" y="0.0" />
+      <point x="1014.1954526018451" y="225.99999999999997" />
+      <point x="6.366357416813344" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Estacion" target="ar.edu.ort.clases.Cabina" relationship="DEPENDENCY">
+      <point x="-8.37643071248408" y="105.0" />
+      <point x="-15.0" y="-149.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.PagoElectronico" relationship="DEPENDENCY">
+      <point x="0.0" y="149.00000000000003" />
+      <point x="557.6278409090909" y="651.0017103762827" />
+      <point x="-88.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.Efectivo" relationship="DEPENDENCY">
+      <point x="90.07084348329363" y="149.00000000000003" />
+      <point x="-89.0" y="-50.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.Estacion" relationship="DEPENDENCY">
+      <point x="15.0" y="-149.0" />
+      <point x="21.62356928751592" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Vehiculo" target="ar.edu.ort.clases.Categoria" relationship="TO_ONE">
+      <point x="0.0" y="61.0" />
+      <point x="0.0" y="-105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.PagoElectronico" target="ar.edu.ort.clases.MedioPago" relationship="GENERALIZATION">
+      <point x="-4.5260184504059E-4" y="-49.99971037628279" />
+      <point x="970.195" y="617.0" />
+      <point x="875.048" y="617.0" />
+      <point x="3.988459278616574E-4" y="38.499709236032004" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pase" target="ar.edu.ort.clases.PagoElectronico" relationship="GENERALIZATION">
+      <point x="-4.674251065353019E-4" y="-72.00010604332954" />
+      <point x="705.626" y="770.0" />
+      <point x="970.195" y="770.0" />
+      <point x="-4.5260184504059E-4" y="50.00028962371721" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Vehiculo" target="ar.edu.ort.clases.Categoria" relationship="DEPENDENCY">
+      <point x="15.0" y="61.0" />
+      <point x="15.0" y="-105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sube" target="ar.edu.ort.clases.PagoElectronico" relationship="GENERALIZATION">
+      <point x="-9.518503190975025E-5" y="-50.00010604332954" />
+      <point x="1007.829" y="770.0" />
+      <point x="970.195" y="770.0" />
+      <point x="-4.5260184504059E-4" y="50.00028962371721" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.Vehiculo" relationship="DEPENDENCY">
+      <point x="-93.5" y="112.68529076396808" />
+      <point x="97.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.MedioPago" relationship="DEPENDENCY">
+      <point x="93.5" y="135.18529076396803" />
+      <point x="-76.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cabina" target="ar.edu.ort.clases.MedioPago" relationship="TO_ONE">
+      <point x="93.5" y="120.18529076396803" />
+      <point x="-76.0" y="-15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.MedioPago" target="ar.edu.ort.clases.Descuento" relationship="REALIZATION">
+      <point x="76.0" y="0.0" />
+      <point x="1029.195452601845" y="361.185290763968" />
+      <point x="21.366357416813344" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="726.0805086796513" y="574.9802769512515" />
+  <SelectedNodes>
+    <node>ar.edu.ort.clases.PagoElectronico</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
