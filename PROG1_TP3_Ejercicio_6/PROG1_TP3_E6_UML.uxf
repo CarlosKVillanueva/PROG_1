@@ -1,0 +1,32 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>70</y><w>180</w><h>80</h></coordinates><panel_attributes>GrupoDeFiguras
+--
+
+--
++mostrarInfoDeFiguras():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>70</y><w>130</w><h>110</h></coordinates><panel_attributes>/Figuras/
+--
+-color:String
+--
+/+area(): double/
+/+perimetro(): double/
++mostrar()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>260</y><w>170</w><h>100</h></coordinates><panel_attributes>Circunferencia
+--
+-radio:double
+--
++area(): double
++perimetro(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>260</y><w>140</w><h>100</h></coordinates><panel_attributes>Rectangulo
+--
+-base:double
+-altura:double
+--
++area(): double
++perimetro(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>260</y><w>190</w><h>110</h></coordinates><panel_attributes>TrianguloEquilatero
+--
+-lado:double
+--
++area(): double
++perimetro(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>170</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>170</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>170</y><w>170</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;90</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>100</y><w>220</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-misFiguras</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>110</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>90</y><w>170</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interfaz&gt;&gt;
+Mostrable
+--
+/+mostrar()/</panel_attributes><additional_attributes></additional_attributes></element></diagram>

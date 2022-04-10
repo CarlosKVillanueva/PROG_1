@@ -1,20 +1,100 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>140</y><w>270</w><h>150</h></coordinates><panel_attributes>Taller
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>200</y>
+      <w>400</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Taller
 --
 
 --
-+cantServiciosPosibles(ArrayList&lt;Bicicleta&gt;): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>140</y><w>210</w><h>190</h></coordinates><panel_attributes>Bicicleta
++cantServiciosPosibles(ArrayList&lt;Bicicleta&gt;): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>200</y>
+      <w>224</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Bicicleta
 --
 _+CANT_MAX_KM:int=2000_
 -modelo: String
 -marca: String
 -cantKm: int
 --
-+estaApta(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>380</y><w>210</w><h>190</h></coordinates><panel_attributes>BicicletaElectrica
++estaApta(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>392</y>
+      <w>224</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BicicletaElectrica
 --
 _-POTENCIA_MAX:int=250_
 -potencia: int
 --
-+estaApta(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>320</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>220</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>30</y><w>140</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interfaz&gt;&gt;
++estaApta(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>344</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>264</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>488</x>
+      <y>112</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interfaz&gt;&gt;
 Aceptable
 --
-/+estaApta():boolean/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>80</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
+/+estaApta():boolean/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>152</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>
