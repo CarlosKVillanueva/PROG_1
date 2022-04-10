@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="86.0" y="388.0">ar.edu.ort.clases.Aceptable</node>
+    <node x="197.0" y="172.0">ar.edu.ort.clases.Bicicleta</node>
+    <node x="411.0" y="399.0">ar.edu.ort.clases.BicicletaElectrica</node>
+    <node x="99.0" y="11.0">ar.edu.ort.clases.Taller</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.BicicletaElectrica" target="ar.edu.ort.clases.Bicicleta" relationship="GENERALIZATION">
+      <point x="0.0" y="61.0" />
+      <point x="539.0" y="373.0" />
+      <point x="307.0" y="373.0" />
+      <point x="14.0" y="83.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Bicicleta" target="ar.edu.ort.clases.Aceptable" relationship="REALIZATION">
+      <point x="-88.5" y="83.0" />
+      <point x="49.5" y="-27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Taller" target="ar.edu.ort.clases.Bicicleta" relationship="DEPENDENCY">
+      <point x="0.0" y="50.0" />
+      <point x="-48.0" y="-83.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="333.5" y="266.0" />
+  <SelectedNodes>
+    <node>ar.edu.ort.clases.Taller</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
