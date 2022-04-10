@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/ORT/Segundo_Cuatrimestre/PROG_1/PROG1_TP3_Ejercicio_6/src</OriginalElement>
+  <nodes>
+    <node x="459.0" y="-271.0">ar.edu.ort.clases.Figura</node>
+    <node x="728.0" y="0.0">ar.edu.ort.clases.Circunferencia</node>
+    <node x="706.734375" y="-350.0">ar.edu.ort.clases.Mostrable</node>
+    <node x="459.0" y="0.0">ar.edu.ort.clases.Rectangulo</node>
+    <node x="196.234375" y="-249.0">ar.edu.ort.clases.GrupoFiguras</node>
+    <node x="189.0" y="0.0">ar.edu.ort.clases.TrianguloEquilatero</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.GrupoFiguras" target="ar.edu.ort.clases.Figura" relationship="DEPENDENCY">
+      <point x="91.5" y="-11.0" />
+      <point x="326.1171875" y="-199.0" />
+      <point x="-74.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Figura" target="ar.edu.ort.clases.Mostrable" relationship="REALIZATION">
+      <point x="74.0" y="0.0" />
+      <point x="768.234375" y="-199.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Circunferencia" target="ar.edu.ort.clases.Figura" relationship="GENERALIZATION">
+      <point x="-64.765625" y="-61.0" />
+      <point x="768.234375" y="-63.5" />
+      <point x="533.0" y="-63.5" />
+      <point x="533.0" y="-184.0" />
+      <point x="74.0" y="15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.GrupoFiguras" target="ar.edu.ort.clases.Figura" relationship="TO_MANY">
+      <point x="91.5" y="4.0" />
+      <point x="326.1171875" y="-184.0" />
+      <point x="-74.0" y="15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Rectangulo" target="ar.edu.ort.clases.Figura" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="576.5" y="-63.0" />
+      <point x="533.0" y="-63.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.TrianguloEquilatero" target="ar.edu.ort.clases.Figura" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="307.0" y="-63.0" />
+      <point x="533.0" y="-63.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="563.5" y="-103.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
