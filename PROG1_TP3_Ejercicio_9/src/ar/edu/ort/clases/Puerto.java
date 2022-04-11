@@ -3,9 +3,7 @@ package ar.edu.ort.clases;
 import java.util.ArrayList;
 
 /**
- * PROG1_TP3_Ejercicio_9
- *
- * @author CKVillanueva el 4/10/2022 | 9:47 PM
+ * PROG1_TP3_Ejercicio_9 @author CKVillanueva el 4/10/2022 | 9:47 PM
  */
 public class Puerto {
     private String nombre;
@@ -16,17 +14,36 @@ public class Puerto {
         this.amarras = new ArrayList<>();
     }
 
-    public void agregarAmarras(Amarra amarra) {
+    public void agregarAmarras(Amarra amarra, Barco barco) {
         amarras.add(amarra);
+        amarra.reservarAmarra(barco);
     }
 
     public int barcosConAlquilerMayorA(double monto) {
-        return 0;
+        int cont = 0;
+        for (Amarra amarra : amarras) {
+            if (!amarra.estaDisponible() && amarra.calcularAlquiler() > monto) {
+                    cont++;
+            }
+        }
+        return cont;
     }
 
     public Barco barcoConMayorConsumo() {
-        Barco barco = null;
-        return barco;
+        Barco barco = null, barcoMayor = null;
+        double potenciaMax = 0, potenciaActual = 0;
+
+        for (Amarra amarra : amarras) {
+            barco = amarra.getBarco();
+            if (!amarra.estaDisponible() && barco instanceof Deportivo) {
+                potenciaActual = ((Deportivo)barco).getPotencia();
+                if (potenciaActual > potenciaMax) {
+                    potenciaMax = potenciaActual;
+                    barcoMayor = barco;
+                }
+            }
+        }
+        return barcoMayor;
     }
 
     @Override

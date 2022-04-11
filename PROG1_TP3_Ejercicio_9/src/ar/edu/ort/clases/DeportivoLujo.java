@@ -2,7 +2,6 @@ package ar.edu.ort.clases;
 
 /**
  * PROG1_TP3_Ejercicio_9
- *
  * @author CKVillanueva el 4/10/2022 | 7:36 PM
  */
 public class DeportivoLujo extends Deportivo{
@@ -14,6 +13,6 @@ public class DeportivoLujo extends Deportivo{
     }
 
     public double calcularConsumo(){
-        return MULTIPLICADOR_LUJO * super.getPotencia();
+        return MULTIPLICADOR_LUJO * super.getPotencia() ;
     }
 }

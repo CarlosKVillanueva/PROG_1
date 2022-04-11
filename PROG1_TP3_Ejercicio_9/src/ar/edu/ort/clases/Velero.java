@@ -15,11 +15,6 @@ public class Velero extends Barco {
     }
 
     @Override
-    public double calcularAlquiler() {
-        return (super.getValorBase() * super.getEslora()) + adicional();
-    }
-
-    @Override
     public double adicional() {
         return super.getValorAdicional() * cantMastiles;
     }

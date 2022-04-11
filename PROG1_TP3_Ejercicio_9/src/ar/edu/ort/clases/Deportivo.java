@@ -2,9 +2,9 @@ package ar.edu.ort.clases;
 
 /**
  * PROG1_TP3_Ejercicio_9
- *
  * @author CKVillanueva el 4/10/2022 | 7:01 PM
  */
+
 public class Deportivo extends Barco{
     private static final double INDICE_POTENCIA = 0.35;
     private int potencia;
@@ -14,11 +14,6 @@ public class Deportivo extends Barco{
         super(matricula, eslora, anioFabricacion, nombreDuenio, valorBase, valorAdicional);
         this.potencia = potencia;
         this.cx = cx;
-    }
-
-    @Override
-    public double calcularAlquiler() {
-        return (super.getValorBase() * super.getEslora()) + adicional();
     }
 
     @Override
@@ -32,5 +27,10 @@ public class Deportivo extends Barco{
 
     public double calcularConsumo(){
         return ((double) potencia / cx) * INDICE_POTENCIA;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s | Consumo: %.2f", super.toString(), calcularConsumo());
     }
 }

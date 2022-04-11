@@ -22,17 +22,18 @@ public abstract class Barco implements Calculadora{
         this.valorAdicional = valorAdicional;
     }
 
-    public abstract double  adicional();
-
-    public int getEslora() {
-        return eslora;
-    }
-
-    public double getValorBase() {
-        return valorBase;
-    }
-
     public double getValorAdicional() {
         return valorAdicional;
+    }
+
+    public double calcularAlquiler() {
+        return (valorBase * eslora) + adicional();
+    }
+
+    public abstract double adicional();
+
+    @Override
+    public String toString() {
+        return String.format("Propietario: %s | Matricula: %s | Eslora: %d",nombreDuenio, matricula,eslora);
     }
 }
