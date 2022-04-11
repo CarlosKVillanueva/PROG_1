@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="464.0232191873705" y="373.1356998696856">ar.edu.ort.clases.Velero</node>
+    <node x="413.00000000000006" y="-199.1428571428571">ar.edu.ort.clases.Amarra</node>
+    <node x="71.97545761325296" y="660.6944227887279">ar.edu.ort.clases.DeportivoLujo</node>
+    <node x="663.0268481327882" y="-199.6428571428571">ar.edu.ort.clases.Coordenada</node>
+    <node x="363.857142857143" y="-4.44274311777167">ar.edu.ort.clases.Barco</node>
+    <node x="71.97545761325296" y="373.1356998696856">ar.edu.ort.clases.Deportivo</node>
+    <node x="5.144811858608875" y="-266.1428571428571">ar.edu.ort.clases.Puerto</node>
+    <node x="786.9565282422263" y="18.107998045284205">ar.edu.ort.clases.Calculadora</node>
+    <node x="817.070980761488" y="373.1356998696856">ar.edu.ort.clases.Yate</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Barco" target="ar.edu.ort.clases.Calculadora" relationship="REALIZATION">
+      <point x="141.0" y="-88.44925883694413" />
+      <point x="-89.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Deportivo" target="ar.edu.ort.clases.Barco" relationship="GENERALIZATION">
+      <point x="-4.576132529621191E-4" y="-105.00014285714286" />
+      <point x="243.975" y="318.27855701254276" />
+      <point x="504.8570000000001" y="318.27855701254276" />
+      <point x="-1.4285714291872864E-4" y="137.9998571428572" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Puerto" target="ar.edu.ort.clases.Amarra" relationship="TO_MANY">
+      <point x="125.0" y="33.5" />
+      <point x="-84.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Yate" target="ar.edu.ort.clases.Barco" relationship="GENERALIZATION">
+      <point x="-7.114452519261704" y="-61.0" />
+      <point x="957.4565282422263" y="319.8907088287994" />
+      <point x="504.857142857143" y="319.8907088287994" />
+      <point x="504.857142857143" y="133.55725688222833" />
+      <point x="141.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Puerto" target="ar.edu.ort.clases.Barco" relationship="DEPENDENCY">
+      <point x="0.0" y="94.0" />
+      <point x="130.14481185860888" y="133.55725688222833" />
+      <point x="-141.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Amarra" target="ar.edu.ort.clases.Coordenada" relationship="DEPENDENCY">
+      <point x="84.49999999999994" y="40.92560589017285" />
+      <point x="733.1268790264853" y="-97.71725125268426" />
+      <point x="733.1268790264853" y="-138.6428571428571" />
+      <point x="-96.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Velero" target="ar.edu.ort.clases.Barco" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="616.5232191873705" y="319.8907088287994" />
+      <point x="504.857142857143" y="319.8907088287994" />
+      <point x="504.857142857143" y="292.4622088287994" />
+      <point x="504.40877993158495" y="292.4622088287994" />
+      <point x="-0.4483629255580581" y="134.7928001303144" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Amarra" target="ar.edu.ort.clases.Coordenada" relationship="TO_ONE">
+      <point x="84.49999999999994" y="0.0" />
+      <point x="733.1268790264853" y="-138.6428571428571" />
+      <point x="733.1268790264853" y="-179.56846303302996" />
+      <point x="-96.5" y="-40.92560589017285" />
+    </edge>
+    <edge source="ar.edu.ort.clases.DeportivoLujo" target="ar.edu.ort.clases.Deportivo" relationship="GENERALIZATION">
+      <point x="-11.5" y="-50.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Puerto" target="ar.edu.ort.clases.Amarra" relationship="DEPENDENCY">
+      <point x="125.0" y="48.5" />
+      <point x="-84.5" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7774822695035462" showDependencies="true" x="556.5" y="287.0" />
+  <SelectedNodes>
+    <node>ar.edu.ort.clases.Puerto</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
