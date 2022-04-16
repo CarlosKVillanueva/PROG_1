@@ -16,6 +16,7 @@ public class PersonaConOS extends Persona {
     @Override
     public String toString() {
         return "PersonaConOS{" +
+                super.toString() +
                 "nombrePrestador='" + nombrePrestador + '\'' +
                 ", numeroAfiliado='" + numeroAfiliado + '\'' +
                 '}';

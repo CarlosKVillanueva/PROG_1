@@ -1,6 +1,9 @@
 package ar.edu.ort.clases;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * TPROG1_TP3_Ejercicio_11 @author CKVillanueva el 4/16/2022 | 10:07 AM
@@ -36,7 +39,12 @@ public class Dia {
             }
 
         }
-
+/*
+        List<Persona> personasOrdenadas = personas.stream()
+                .sorted(Comparator.comparing(Persona::getPrioridad))
+                .collect(Collectors.toList());
+        personasOrdenadas.forEach(System.out::println);
+        */
         ordenarListaPersonas();
     }
 
