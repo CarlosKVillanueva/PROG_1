@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-404.6653363740023" y="581.6280750277172">ar.edu.ort.clases.Persona</node>
+    <node x="-404.6653363740023" y="150.67846898636049">ar.edu.ort.clases.Dia</node>
+    <node x="-732.8193156127566" y="581.6280750277172">ar.edu.ort.clases.Priorizable</node>
+    <node x="-774.8193156127566" y="247.17673888255422">ar.edu.ort.clases.CentroTesteo</node>
+    <node x="-717.183852627509" y="832.7740961835134">ar.edu.ort.clases.Notificable</node>
+    <node x="-78.73851562222558" y="691.6280750277172">ar.edu.ort.clases.Motivo</node>
+    <node x="-451.1653363740023" y="1011.9399967646862">ar.edu.ort.clases.PersonaConOS</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Persona" target="ar.edu.ort.clases.Priorizable" relationship="REALIZATION">
+      <point x="-126.0" y="-143.5" />
+      <point x="78.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Dia" target="ar.edu.ort.clases.Persona" relationship="CREATE">
+      <point x="0.0" y="182.0" />
+      <point x="0.0" y="-193.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Persona" target="ar.edu.ort.clases.Notificable" relationship="REALIZATION">
+      <point x="-126.0" y="85.14602115579623" />
+      <point x="78.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Dia" target="ar.edu.ort.clases.PersonaConOS" relationship="CREATE">
+      <point x="126.0" y="0.0" />
+      <point x="115.76148437777442" y="332.6784689863605" />
+      <point x="115.76148437777442" y="1072.9399967646862" />
+      <point x="172.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Persona" target="ar.edu.ort.clases.Motivo" relationship="TO_ONE">
+      <point x="126.0" y="0.0" />
+      <point x="-88.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.PersonaConOS" target="ar.edu.ort.clases.Persona" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="193.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.CentroTesteo" target="ar.edu.ort.clases.Dia" relationship="TO_MANY">
+      <point x="120.5" y="-30.498269896193733" />
+      <point x="-126.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Dia" target="ar.edu.ort.clases.Persona" relationship="TO_MANY">
+      <point x="15.0" y="182.0" />
+      <point x="15.0" y="-193.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8735059760956175" showDependencies="true" x="-319.4999999999999" y="651.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
