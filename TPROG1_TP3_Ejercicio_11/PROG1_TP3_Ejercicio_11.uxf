@@ -125,9 +125,9 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
+      <x>580</x>
       <y>310</y>
-      <w>240</w>
+      <w>300</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
