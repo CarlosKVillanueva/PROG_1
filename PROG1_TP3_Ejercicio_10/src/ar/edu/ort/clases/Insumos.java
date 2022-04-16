@@ -1,7 +1,7 @@
 package ar.edu.ort.clases;
 
 /**
- * PROG1_TP3_Ejercicio_10@author CKVillanueva el 15/04/2022 | 12:17
+ * PROG1_TP3_Ejercicio_10 @author CKVillanueva el 15/04/2022 | 12:17
  */
 public class Insumos implements Facturable {
     private static final double IVA = 1.21;
@@ -19,7 +19,7 @@ public class Insumos implements Facturable {
 
     @Override
     public double calcularFacturacion() {
-        return precioLista * porcentajeGanancia ;
+        return Matematica.sumarPorcentaje(precioLista, porcentajeGanancia);
     }
 
     @Override

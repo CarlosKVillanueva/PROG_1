@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="900.9634767796211" y="176.15041340992047">ar.edu.ort.clases.Tipo</node>
+    <node x="342.4661587856956" y="-241.95979364144853">ar.edu.ort.clases.Comercio</node>
+    <node x="159.96615878569557" y="160.4833666596354">ar.edu.ort.clases.Servicio</node>
+    <node x="-191.77501502691715" y="160.4833666596354">ar.edu.ort.clases.Matematica</node>
+    <node x="557.9661587856956" y="160.4833666596354">ar.edu.ort.clases.Insumos</node>
+    <node x="-85.09100498830605" y="436.3606632483129">ar.edu.ort.clases.ServicioReparacion</node>
+    <node x="345.40240561683646" y="26.26178650909344">ar.edu.ort.clases.Facturable</node>
+    <node x="345.40240561683646" y="436.3606632483129">ar.edu.ort.clases.ServicioArmado</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Comercio" target="ar.edu.ort.clases.Facturable" relationship="TO_MANY">
+      <point x="0.0" y="105.0" />
+      <point x="458.4661587856956" y="-2.8490035661775437" />
+      <point x="444.90240561683646" y="-2.8490035661775437" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ServicioArmado" target="ar.edu.ort.clases.Servicio" relationship="GENERALIZATION">
+      <point x="3.579356434215697E-4" y="-49.999940985026115" />
+      <point x="444.9027635524799" y="382.0" />
+      <point x="259.46658874659136" y="382.0" />
+      <point x="4.299608957296641E-4" y="82.9996333403646" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Insumos" target="ar.edu.ort.clases.Tipo" relationship="TO_ONE">
+      <point x="124.5" y="-6.332953249714933" />
+      <point x="-78.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Insumos" target="ar.edu.ort.clases.Facturable" relationship="REALIZATION">
+      <point x="0.0" y="-105.0" />
+      <point x="682.4661587856956" y="243.4833666596354" />
+      <point x="481.2158704350614" y="243.4833666596354" />
+      <point x="481.2158704350614" y="94.89965397923882" />
+      <point x="24.066452514651587" y="30.63786747014538" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Servicio" target="ar.edu.ort.clases.Facturable" relationship="REALIZATION">
+      <point x="99.5" y="0.0" />
+      <point x="412.26297577854683" y="243.4833666596354" />
+      <point x="-32.63942983828963" y="36.197267700825904" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ServicioReparacion" target="ar.edu.ort.clases.Servicio" relationship="GENERALIZATION">
+      <point x="4.988306052666758E-6" y="-93.99966324831291" />
+      <point x="24.409" y="382.0" />
+      <point x="259.46658874659136" y="382.0" />
+      <point x="4.299608957296641E-4" y="82.9996333403646" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8993775933609959" showDependencies="true" x="514.0000000000002" y="240.00000000000003" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

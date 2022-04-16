@@ -10,8 +10,13 @@ public class Main {
         Comercio comercio = new Comercio("Coso");
         comercio.agregarOperacion(new ServicioArmado(8));//1656
         comercio.agregarOperacion(new ServicioReparacion(8,3));//2070
-        comercio.agregarOperacion(new Insumos("Toner", 1.1, 300, Tipo.HARDWARE));//399,30
+        comercio.agregarOperacion(new ServicioReparacion(8,2));//2070
+        comercio.agregarOperacion(new ServicioReparacion(8,1));//2070
+        comercio.agregarOperacion(new ServicioReparacion(6,1));//2070
+        comercio.agregarOperacion(new Insumos("Toner", 10, 300, Tipo.HARDWARE));//399,30
 
-        comercio.mostrar();
+        //comercio.montoIndivualFacturado();
+        System.out.printf("La facturacion total es de: $%.2f\n", comercio.montoTotalFacturado() );
+        System.out.printf("Las reparaciones de dificultad baja fueron: %d", comercio.cantServiciosSimples());
     }
 }

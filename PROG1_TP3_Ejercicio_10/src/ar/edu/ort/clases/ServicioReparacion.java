@@ -1,7 +1,7 @@
 package ar.edu.ort.clases;
 
 /**
- * PROG1_TP3_Ejercicio_10@author CKVillanueva el 15/04/2022 | 12:27
+ * PROG1_TP3_Ejercicio_10 @author CKVillanueva el 15/04/2022 | 12:27
  */
 public class ServicioReparacion extends Servicio {
 
@@ -9,6 +9,10 @@ public class ServicioReparacion extends Servicio {
     private final double ADICIONAL_DIFICULTAD = 1.25;
     private final double VALOR_HORA = 180;
     private int dificultad;
+
+    public boolean dificultadBaja() {
+        return dificultad < DIFICULTAD_ALTA;
+    }
 
     public ServicioReparacion(int cantHorasService, int dificultad) {
         super(cantHorasService);

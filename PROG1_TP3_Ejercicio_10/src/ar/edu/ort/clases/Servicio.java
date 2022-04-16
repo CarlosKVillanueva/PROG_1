@@ -1,7 +1,7 @@
 package ar.edu.ort.clases;
 
 /**
- * PROG1_TP3_Ejercicio_10@author CKVillanueva el 15/04/2022 | 12:21
+ * PROG1_TP3_Ejercicio_10 @author CKVillanueva el 15/04/2022 | 12:21
  */
 public abstract class Servicio implements Facturable {
     private static final double IVA = 1.15;
@@ -14,10 +14,6 @@ public abstract class Servicio implements Facturable {
     public int getCantHorasService() {
         return cantHorasService;
     }
-
-    @Override
-    public abstract double calcularFacturacion();
-
 
     @Override
     public double facturacionConIva() {

@@ -1,33 +1,213 @@
-<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>580</x><y>370</y><w>170</w><h>90</h></coordinates><panel_attributes>Insumos Informaticos
---
-- nombre:String
-- porcentajeGanancia:double
-- precioLista:double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>590</y><w>100</w><h>90</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
-TIpo
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>710</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+Tipo
 --
 _+PERIFERICO_
 _+LIMPIEZA_
-_+HARDWARE_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>450</y><w>50</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+_+HARDWARE_
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1000</x>
+      <y>630</y>
+      <w>80</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
 m1=1
--tipo</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>360</y><w>210</w><h>100</h></coordinates><panel_attributes>/Servicio/
+-tipo</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>450</y>
+      <w>320</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/Servicio/
 --
-- cantHorasService:double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>260</x><y>550</y><w>210</w><h>190</h></coordinates><panel_attributes>ServicioArmado
+- cantHorasService:double
+
+--
+
+/+calcularFacturacion():double/
++facturacionConIva():double
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>600</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;180.0;40.0;10.0;40.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>600</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;210.0;40.0;210.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>240</y>
+      <w>280</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Facturable
+--
+/cacularFacturacion():double/
+/facturacionConIva():double/
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>330</y>
+      <w>340</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>320.0;10.0;320.0;70.0;10.0;70.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>330</y>
+      <w>380</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;360.0;70.0;360.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>40</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Comercio
+--
+- razonSocial:String
+
+--
+
++montoIndivualFacturado():void
++montoTotalFacturado():void
++cantServiciosSimples():int
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>140</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+-historial</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>450</y>
+      <w>370</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Insumos Informaticos
+--
+_+IVA_1.21:double_
+- nombre:String
+- porcentajeGanancia:double
+- precioLista:double
+
+--
+
++calcularFacturacion():double
++facturacionConIva():double
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>690</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ServicioArmado
 --
 _+VALOR_HORA=250:double_
 
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>550</y><w>230</w><h>190</h></coordinates><panel_attributes>ServicioReparacion
 --
-_+VALOR_HORA=180:double_
-_+ADICIONAL_DIFICULTAD=1.25:double_
+
++calcularFacturacion():double
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>690</y>
+      <w>340</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ServicioReparacion
+--
+_+DIFICULTAD ALTA=180:int_
+_+VALOR HORA=180:double_
+_+ADICIONAL DIFICULTAD=1.25:double_
 - dificultad:int
 
+--
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>450</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>450</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>250</y><w>170</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
-Facturable
---
-cacularFacturacion():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>280</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>290</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;70;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>50</y><w>120</w><h>110</h></coordinates><panel_attributes>Comercio
---
-- razonSocial:String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>150</y><w>70</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
-m1=0..n
--historial</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
++calcularFacturacion():double
++dificultadBaja:boolean
+
+
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
