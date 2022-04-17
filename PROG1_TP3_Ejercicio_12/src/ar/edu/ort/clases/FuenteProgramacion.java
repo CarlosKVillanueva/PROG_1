@@ -33,14 +33,15 @@ public class FuenteProgramacion extends Fuente{
    
     @Override
     public double indiceCalidad() {
-        return calcularPromedioMetodos();
+        return PromediadorCalidad.promedioIndiceCalidad(metodos);
     }
-
-    private double calcularPromedioMetodos() {
+/* Metodo Promedio Calidad de Metodos
+    private double promedioIndiceCalidadMetodos() {
         double acumMetodo = ZERO;
         for (Metodo metodo : metodos) {
             acumMetodo += metodo.indiceCalidad();
         }
         return (metodos.size() != ZERO) ? acumMetodo / metodos.size() : ZERO;
     }
+   */
 }

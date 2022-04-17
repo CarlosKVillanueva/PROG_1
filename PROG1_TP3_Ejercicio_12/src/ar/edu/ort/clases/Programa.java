@@ -45,22 +45,24 @@ public class Programa implements Calificable{
 
     @Override
     public double indiceCalidad() {
-        return pasoPrueba ? calcularPromedioFuentes() : ZERO;
+        return pasoPrueba ? PromediadorCalidad.promedioIndiceCalidad(fuentes) : ZERO;
     }
+    /*
 
-    private double calcularPromedioFuentes(){
-        double acumFuentes = ZERO;
-        for (Fuente fuente : fuentes) {
-            acumFuentes += fuente.indiceCalidad();
+        private double calcularPromedioFuentes(){
+            double acumFuentes = ZERO;
+            for (Fuente fuente : fuentes) {
+                acumFuentes += fuente.indiceCalidad();
+            }
+            return (fuentes.size() > ZERO) ? (acumFuentes / fuentes.size()) : ZERO;
         }
-        return (fuentes.size() > ZERO) ? (acumFuentes / fuentes.size()) : ZERO;
-    }
+    */
 
     public ArrayList<Fuente> listadoFuentesMayoresAlPromedio() {
         ArrayList<Fuente> fuentesSuperiores = new ArrayList<>();
 
         for (Fuente fuente : fuentes) {
-            if (fuente.indiceCalidad() > calcularPromedioFuentes()) {
+            if (fuente.indiceCalidad() > PromediadorCalidad.promedioIndiceCalidad(fuentes)) {
                 fuentesSuperiores.add(fuente);
             }
         }
