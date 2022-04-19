@@ -39,10 +39,11 @@ public class Dia {
             }
 
         }
-/*
+        /*
         List<Persona> personasOrdenadas = personas.stream()
-                .sorted(Comparator.comparing(Persona::getPrioridad))
-                .collect(Collectors.toList());
+                                                    .sorted(Comparator.comparing(Persona::getPrioridad))
+                                                    .collect(Collectors.toList());
+
         personasOrdenadas.forEach(System.out::println);
         */
         ordenarListaPersonas();

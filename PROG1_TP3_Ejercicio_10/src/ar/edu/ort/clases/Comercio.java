@@ -20,8 +20,7 @@ public class Comercio {
 
     public void montoIndivualFacturado() {
         System.out.println("Listado de Operaciones:\n");
-        for (Facturable f :
-                historial) {
+        for (Facturable f : historial) {
             System.out.printf("%.2f\n", f.facturacionConIva());
         }
     }

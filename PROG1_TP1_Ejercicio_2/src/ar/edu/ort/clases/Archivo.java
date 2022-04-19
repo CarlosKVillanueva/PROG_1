@@ -1,4 +1,8 @@
+package ar.edu.ort.clases;
 
+/**
+ * PROG1_TP1_Ejercicio_2 @author CKVillanueva el 4/19/2022 | 4:12 PM
+ */
 public class Archivo {
     private String nombre;
     private double peso;

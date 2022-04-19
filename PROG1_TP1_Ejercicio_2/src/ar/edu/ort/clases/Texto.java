@@ -1,3 +1,8 @@
+package ar.edu.ort.clases;
+
+/**
+ * PROG1_TP1_Ejercicio_2 @author CKVillanueva el 4/19/2022 | 4:17 PM
+ */
 public class Texto extends Archivo {
     private String codificacion;
 
