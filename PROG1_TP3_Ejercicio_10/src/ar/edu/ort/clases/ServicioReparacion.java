@@ -5,7 +5,7 @@ package ar.edu.ort.clases;
  */
 public class ServicioReparacion extends Servicio {
 
-    public static final int DIFICULTAD_ALTA = 3;
+    private final static int DIFICULTAD_ALTA = 3;
     private final double ADICIONAL_DIFICULTAD = 1.25;
     private final double VALOR_HORA = 180;
     private int dificultad;
