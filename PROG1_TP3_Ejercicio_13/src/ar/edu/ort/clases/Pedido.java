@@ -24,4 +24,47 @@ public class Pedido {
         return this.cocinero.mismoLegajo(legajo);
     }
 
+    public boolean mismaFormaP(FormaPago formaPago) {
+        return this.formaPago == formaPago;
+    }
+
+    public int getCantBebidas() {
+        int acumBebidas = 0;
+        for (ItemPedido item : items) {
+            acumBebidas += item.cantBebidas();
+        }
+        return acumBebidas;
+    }
+
+    public void mostrarPedido() {
+        System.out.printf("Cocinero: %s\nMesa: %s\nMozo: %s\nItems Pedidos: %s\nFormaPago: %s\n", cocinero,mesa,mozo,items,formaPago);
+    }
+
+    public boolean mismoPedido(int nroMesa) {
+        return this.mesa.getNroMesa() == nroMesa;
+    }
+
+    public double getImporteConDescuento() {
+        double importe = 0;
+        for (ItemPedido item : items) {
+            importe += item.getImporteConDescuento();
+        }
+        return importe;
+    }
+
+    public boolean pagoEfectivo() {
+        return this.formaPago == FormaPago.EFECTIVO;
+    }
+
+    public double getImporteSinDescuento() {
+        double importe = 0;
+        for (ItemPedido item : items) {
+            importe += item.getImporte();
+        }
+        return importe;
+    }
+
+    public void liberarMesa() {
+        this.mesa.liberar();
+    }
 }

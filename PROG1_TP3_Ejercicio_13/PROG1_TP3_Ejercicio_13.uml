@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-217.37272790145207" y="434.76242759796725">ar.edu.ort.clases.Bebida</node>
+    <node x="646.9584230236097" y="246.244160420423">ar.edu.ort.clases.Pedido</node>
+    <node x="152.70882055553744" y="168.1318911865514">ar.edu.ort.clases.ItemPedido</node>
+    <node x="1835.7100698355134" y="435.21422166678224">ar.edu.ort.clases.Categoria</node>
+    <node x="1161.9853386582452" y="338.66608380434974">ar.edu.ort.clases.Chef</node>
+    <node x="1447.6538099618078" y="204.5048010134954">ar.edu.ort.clases.Gerente</node>
+    <node x="741.9584230236097" y="671.47188123711">ar.edu.ort.clases.FormaPago</node>
+    <node x="1597.0122542928812" y="19.27103840664836">ar.edu.ort.clases.EmpleadoAgremiado</node>
+    <node x="1161.9853386582452" y="193.0048010134954">ar.edu.ort.clases.Cocinero</node>
+    <node x="103.12682179392652" y="434.76242759796713">ar.edu.ort.clases.Plato</node>
+    <node x="1785.9645227617223" y="204.5048010134954">ar.edu.ort.clases.Mozo</node>
+    <node x="977.056386045099" y="968.9724513625374">ar.edu.ort.clases.Credito</node>
+    <node x="530.8604600021205" y="968.9724513625374">ar.edu.ort.clases.Debito</node>
+    <node x="402.2893805436056" y="15.02130370403944">ar.edu.ort.clases.Mesa</node>
+    <node x="753.9584230236097" y="968.9724513625375">ar.edu.ort.clases.Efectivo</node>
+    <node x="1153.9853386582452" y="30.27103840664836">ar.edu.ort.clases.EmpleadoCocina</node>
+    <node x="1190.9853386582454" y="-143.2157947693762">ar.edu.ort.clases.Empleado</node>
+    <node x="355.28938054360566" y="-124.72896159335164">ar.edu.ort.clases.Menu</node>
+    <node x="-53.913160887488004" y="-124.72896159335164">ar.edu.ort.clases.Producto</node>
+    <node x="705.9584230236097" y="-124.72896159335164">ar.edu.ort.clases.Restaurant</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Restaurant" target="ar.edu.ort.clases.Pedido" relationship="TO_MANY">
+      <point x="0.0" y="127.0" />
+      <point x="0.0" y="-182.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Chef" target="ar.edu.ort.clases.Cocinero" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoAgremiado" target="ar.edu.ort.clases.Empleado" relationship="GENERALIZATION">
+      <point x="-2.542928812090395E-4" y="-49.50003840664836" />
+      <point x="1769.012" y="-1.0" />
+      <point x="1291.485" y="-1.0" />
+      <point x="-3.3865824548229284E-4" y="60.4997947693762" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Bebida" target="ar.edu.ort.clases.Producto" relationship="GENERALIZATION">
+      <point x="-2.720985479385263E-4" y="-83.00042759796719" />
+      <point x="-98.873" y="396.0" />
+      <point x="58.087" y="396.0" />
+      <point x="1.6088748800768826E-4" y="93.99996159335164" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Restaurant" target="ar.edu.ort.clases.Menu" relationship="TO_ONE">
+      <point x="-140.0" y="-15.000038406648358" />
+      <point x="645.6446556004016" y="-12.729" />
+      <point x="645.6446556004016" y="-101.229" />
+      <point x="108.49999999999994" y="-15.000038406648358" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.Mozo" relationship="TO_ONE">
+      <point x="198.9999999999999" y="14.47006124635925" />
+      <point x="1818.2100698355134" y="442.71422166678224" />
+      <point x="-127.25445292620884" y="38.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Debito" target="ar.edu.ort.clases.FormaPago" relationship="REALIZATION">
+      <point x="91.99953999787954" y="-4.513625374329422E-4" />
+      <point x="735.0" y="1007.472" />
+      <point x="735.0" y="951.472" />
+      <point x="845.958" y="951.472" />
+      <point x="-4.230236097555462E-4" y="105.00011876289" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ItemPedido" target="ar.edu.ort.clases.Producto" relationship="TO_ONE">
+      <point x="-109.0" y="-94.0" />
+      <point x="102.12198144302545" y="94.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Credito" target="ar.edu.ort.clases.FormaPago" relationship="REALIZATION">
+      <point x="-3.860450988213415E-4" y="38.49954863746257" />
+      <point x="1069.056" y="1063.472" />
+      <point x="735.0" y="1063.472" />
+      <point x="735.0" y="951.472" />
+      <point x="845.958" y="951.472" />
+      <point x="-4.230236097555462E-4" y="105.00011876289" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.FormaPago" relationship="TO_ONE">
+      <point x="0.0" y="182.0" />
+      <point x="0.0" y="-105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.EmpleadoCocina" target="ar.edu.ort.clases.Empleado" relationship="GENERALIZATION">
+      <point x="-3.3865824525491917E-4" y="-38.50003840664836" />
+      <point x="-3.3865824548229284E-4" y="60.4997947693762" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Plato" target="ar.edu.ort.clases.Producto" relationship="GENERALIZATION">
+      <point x="1.7820607348539852E-4" y="-83.00042759796719" />
+      <point x="249.627" y="396.0" />
+      <point x="58.087" y="396.0" />
+      <point x="1.6088748800768826E-4" y="93.99996159335164" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.Mesa" relationship="TO_ONE">
+      <point x="-107.95842302360973" y="-182.000160420423" />
+      <point x="738.0" y="214.0" />
+      <point x="487.289" y="214.0" />
+      <point x="-3.8054360561545764E-4" y="82.99969629596055" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Gerente" target="ar.edu.ort.clases.EmpleadoAgremiado" relationship="GENERALIZATION">
+      <point x="10.358444331073315" y="-38.5" />
+      <point x="-164.5" y="49.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Restaurant" target="ar.edu.ort.clases.Mesa" relationship="TO_MANY">
+      <point x="-140.0" y="95.75026529739108" />
+      <point x="85.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.Cocinero" relationship="TO_ONE">
+      <point x="198.9999999999999" y="-174.5" />
+      <point x="-133.5" y="10.739359406927576" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.ItemPedido" relationship="TO_MANY">
+      <point x="-199.0" y="-166.1122692338716" />
+      <point x="116.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Efectivo" target="ar.edu.ort.clases.FormaPago" relationship="REALIZATION">
+      <point x="-92.00042302360976" y="-4.5136253754662903E-4" />
+      <point x="735.0" y="1007.472" />
+      <point x="735.0" y="951.472" />
+      <point x="845.958" y="951.472" />
+      <point x="-4.230236097555462E-4" y="105.00011876289" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Mozo" target="ar.edu.ort.clases.EmpleadoAgremiado" relationship="GENERALIZATION">
+      <point x="-11.952268468841112" y="-38.5" />
+      <point x="164.5" y="49.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Mozo" target="ar.edu.ort.clases.Categoria" relationship="TO_ONE">
+      <point x="-17.75445292620884" y="38.5" />
+      <point x="0.0" y="-94.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Menu" target="ar.edu.ort.clases.Producto" relationship="TO_MANY">
+      <point x="-108.5" y="0.0" />
+      <point x="112.0" y="-55.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cocinero" target="ar.edu.ort.clases.EmpleadoCocina" relationship="GENERALIZATION">
+      <point x="-4.0" y="-50.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Restaurant" target="ar.edu.ort.clases.Empleado" relationship="TO_MANY">
+      <point x="140.0" y="-84.98683317602456" />
+      <point x="-100.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8386683738796414" showDependencies="true" x="1321.4046564885475" y="859.1732824427481" />
+  <SelectedNodes>
+    <node>ar.edu.ort.clases.Efectivo</node>
+    <node>ar.edu.ort.clases.Debito</node>
+    <node>ar.edu.ort.clases.Credito</node>
+    <node>ar.edu.ort.clases.FormaPago</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

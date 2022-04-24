@@ -63,7 +63,7 @@ _- TOPE_SEGUNDOS: int = 120_
 _- SEG_MIN: int = 90_
 -
 + aprobado(): boolean
-- getTiempo(): double
++ getTiempo(): double
 
 </panel_attributes>
     <additional_attributes/>
@@ -118,7 +118,7 @@ _ -MAX FALTAS: int = 2_
     </coordinates>
     <panel_attributes>/Evaluable/
 -
-aprobado(): boolean
+/aprobado(): boolean/
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -306,7 +306,7 @@ m1=1
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m1=0..n</panel_attributes>
+m1=1</panel_attributes>
     <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
   </element>
   <element>
@@ -314,10 +314,11 @@ m1=0..n</panel_attributes>
     <coordinates>
       <x>1210</x>
       <y>30</y>
-      <w>210</w>
-      <h>190</h>
+      <w>350</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Informe
+-
 - porcReprobados: double
 - promTiempoAutosAprobados: double
 -

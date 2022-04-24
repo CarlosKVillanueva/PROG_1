@@ -13,4 +13,21 @@ public class ItemPedido {
         this.cantidad = cantidad;
         this.producto = producto;
     }
+
+    public int cantBebidas() {
+        return (this.producto instanceof Bebida) ? this.cantidad : 0;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%d\t %s\n", cantidad, producto);
+    }
+
+    public double getImporteConDescuento() {
+        return this.cantidad * producto.getPrecioConDescuento() ;
+    }
+
+    public double getImporte() {
+        return this.cantidad * producto.getPrecio();
+    }
 }

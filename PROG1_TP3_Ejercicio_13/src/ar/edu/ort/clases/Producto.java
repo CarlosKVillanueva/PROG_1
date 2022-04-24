@@ -7,5 +7,26 @@ public abstract class Producto {
     private String nombre;
     private double precio;
 
+
+
+    public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
     public abstract double getDescuento();
+
+    public double getPrecioConDescuento() {
+        return this.precio * getDescuento();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %.2f", nombre, precio);
+    }
 }
+
+

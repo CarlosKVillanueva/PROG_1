@@ -10,7 +10,24 @@ public class Mesa {
 
     public Mesa(int numero, int cantPersonas, boolean estaLibre) {
         this.numero = numero;
+        setCantPersonas(cantPersonas);
+        setEstaLibre(estaLibre);
+    }
+
+    private void setCantPersonas(int cantPersonas) {
         this.cantPersonas = cantPersonas;
+    }
+
+    private void setEstaLibre(boolean estaLibre) {
         this.estaLibre = estaLibre;
+    }
+
+    public int getNroMesa() {
+        return numero;
+    }
+
+    public void liberar() {
+        setCantPersonas(0);
+        setEstaLibre(true);
     }
 }
