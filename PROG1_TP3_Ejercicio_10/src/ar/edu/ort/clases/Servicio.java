@@ -4,7 +4,7 @@ package ar.edu.ort.clases;
  * PROG1_TP3_Ejercicio_10 @author CKVillanueva el 15/04/2022 | 12:21
  */
 public abstract class Servicio implements Facturable {
-    private int cantHorasService;
+    public int cantHorasService;
 
     public Servicio(int cantHorasService) {
         this.cantHorasService = cantHorasService;

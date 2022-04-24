@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="681.8852508615661" y="-202.47093849624775">ar.edu.ort.clases.SedeLicencias</node>
+    <node x="711.8852508615661" y="588.9947184663858">ar.edu.ort.clases.Vehiculo</node>
+    <node x="1153.3326625729019" y="350.24421944119223">ar.edu.ort.clases.ExamenMoto</node>
+    <node x="338.3217007868311" y="633.4947184663858">ar.edu.ort.clases.Auto</node>
+    <node x="491.46295111248065" y="93.94681809419501">ar.edu.ort.clases.Persona</node>
+    <node x="1163.3326625729019" y="633.4947184663858">ar.edu.ort.clases.Moto</node>
+    <node x="727.3852508615661" y="383.24421944119223">ar.edu.ort.clases.Circuito</node>
+    <node x="1031.64616659613" y="-169.47093849624775">ar.edu.ort.clases.Informe</node>
+    <node x="718.3852508615661" y="82.44681809419501">ar.edu.ort.clases.Examen</node>
+    <node x="889.5436513501822" y="317.2442194411922">ar.edu.ort.clases.Evaluable</node>
+    <node x="291.8217007868312" y="383.2442194411922">ar.edu.ort.clases.ExamenAuto</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Circuito" target="ar.edu.ort.clases.Evaluable" relationship="REALIZATION">
+      <point x="-2.5086156608722376E-4" y="-83.0002194411922" />
+      <point x="808.885" y="295.0" />
+      <point x="966.044" y="295.0" />
+      <point x="3.4864981773807813E-4" y="-27.000219441192144" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenMoto" target="ar.edu.ort.clases.Circuito" relationship="TO_MANY">
+      <point x="-122.5" y="0.0" />
+      <point x="81.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Moto" target="ar.edu.ort.clases.Vehiculo" relationship="GENERALIZATION">
+      <point x="-112.49988975918427" y="2.8153361415661493E-4" />
+      <point x="96.99965670422557" y="2.8153361415661493E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenMoto" target="ar.edu.ort.clases.Moto" relationship="TO_ONE">
+      <point x="0.0" y="116.0" />
+      <point x="0.0" y="-38.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Auto" target="ar.edu.ort.clases.Vehiculo" relationship="GENERALIZATION">
+      <point x="97.0" y="0.0" />
+      <point x="-97.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenMoto" target="ar.edu.ort.clases.Examen" relationship="GENERALIZATION">
+      <point x="3.3742709820216987E-4" y="-116.00021944119214" />
+      <point x="1275.833" y="272.0" />
+      <point x="808.885" y="272.0" />
+      <point x="-2.5086156608722376E-4" y="72.000181905805" />
+    </edge>
+    <edge source="ar.edu.ort.clases.SedeLicencias" target="ar.edu.ort.clases.Informe" relationship="CREATE">
+      <point x="127.0" y="0.0" />
+      <point x="-123.0" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Examen" target="ar.edu.ort.clases.Persona" relationship="TO_ONE">
+      <point x="-90.5" y="0.0" />
+      <point x="62.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenAuto" target="ar.edu.ort.clases.Examen" relationship="GENERALIZATION">
+      <point x="2.9921316883019244E-4" y="-83.0002194411922" />
+      <point x="435.322" y="272.0" />
+      <point x="808.885" y="272.0" />
+      <point x="-2.5086156608722376E-4" y="72.000181905805" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenAuto" target="ar.edu.ort.clases.Circuito" relationship="TO_ONE">
+      <point x="143.49999999999994" y="0.0" />
+      <point x="-81.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.SedeLicencias" target="ar.edu.ort.clases.Examen" relationship="TO_MANY">
+      <point x="0.0" y="94.0" />
+      <point x="0.0" y="-72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Examen" target="ar.edu.ort.clases.Evaluable" relationship="REALIZATION">
+      <point x="71.61474913843392" y="72.000181905805" />
+      <point x="880.5" y="295.0" />
+      <point x="966.044" y="295.0" />
+      <point x="3.4864981773807813E-4" y="-27.000219441192144" />
+    </edge>
+    <edge source="ar.edu.ort.clases.ExamenAuto" target="ar.edu.ort.clases.Auto" relationship="TO_ONE">
+      <point x="-5.6843418860808015E-14" y="82.99999999999994" />
+      <point x="0.0" y="-38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8" showDependencies="true" x="921.0000000000001" y="283.125" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
