@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/ORT/Segundo_Cuatrimestre/PROG_1/PROG1_TP3_Ejercicio_14/src</OriginalElement>
+  <nodes>
+    <node x="87.2244210076758" y="-339.4086986871293">ar.edu.ort.clases.Inmueble</node>
+    <node x="-18.458090291808105" y="101.86258217243926">ar.edu.ort.clases.Inmobiliaria</node>
+    <node x="138.13127135794286" y="-14.404012735866075">ar.edu.ort.clases.Notificable</node>
+    <node x="268.66773072542304" y="94.53276846517548">ar.edu.ort.clases.Cliente</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Inmobiliaria" target="ar.edu.ort.clases.Notificable" relationship="REALIZATION">
+      <point x="103.5890902918081" y="-83.0" />
+      <point x="-15.000271357942864" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Inmobiliaria" target="ar.edu.ort.clases.Inmueble" relationship="TO_MANY">
+      <point x="15.000090291808107" y="-83.0" />
+      <point x="-96.1824210076758" y="127.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cliente" target="ar.edu.ort.clases.Notificable" relationship="REALIZATION">
+      <point x="-112.0" y="-83.0" />
+      <point x="59.53645936748018" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Inmueble" target="ar.edu.ort.clases.Notificable" relationship="TO_MANY">
+      <point x="7.406850350267064" y="127.0" />
+      <point x="0.0" y="-27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.1171974522292993" showDependencies="true" x="218.6066134549601" y="-21.793044469783354" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

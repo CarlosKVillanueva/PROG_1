@@ -24,7 +24,7 @@ public class ExamenMoto extends Examen {
     }
 
     private boolean apruebaMotorMenorCC() {
-        return cantCircuitosAprobados() >= this.circuitos.size() - 1 && cumpleTiempoTotal() ;
+        return (cantCircuitosAprobados() >= (this.circuitos.size() - 1)) && cumpleTiempoTotal() ;
     }
 
     private boolean cumpleTiempoTotal() {
