@@ -19,13 +19,11 @@ public class SedeLicencias {
 
     private double porcentajeReprobados() {
         double acumReprobados = 0;
-
         for (Examen examen : examenes) {
             if (!examen.aprobado()) {
                 acumReprobados++;
             }
         }
-
         return (examenes.size() > 0 ) ? (acumReprobados / examenes.size() * 100) : 0;
     }
 
