@@ -15,7 +15,7 @@ public class Dia {
     private static final double CIEN_PORCIENTO = 100;
     private String fecha;
     private boolean habil;
-    private ArrayList<Persona> personas;
+    private ArrayList<Notificable> personas;
 
     public Dia(String fecha, boolean habil) {
         this.fecha = fecha;
@@ -104,7 +104,7 @@ public class Dia {
 
     public int cantMaxPrioridad() {
         int cont = 0;
-        for (Persona persona : personas) {
+        for (Notificable persona : personas) {
             if (persona.esDeRiesgo()) {
                 cont++;
             }
@@ -114,7 +114,7 @@ public class Dia {
 
     public double promedioEdadPersonasSinOS() {
         int acumEdad = 0, cont = 0;
-        for (Persona persona : personas) {
+        for (Notificable persona : personas) {
             if (!(persona instanceof PersonaConOS)) {
                 acumEdad += persona.getEdad();
                 cont++;

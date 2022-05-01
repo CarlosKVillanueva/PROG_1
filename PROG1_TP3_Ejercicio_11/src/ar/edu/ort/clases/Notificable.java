@@ -5,4 +5,10 @@ package ar.edu.ort.clases;
  */
 public interface Notificable {
     void notificar(String mensaje);
+
+    boolean esDeRiesgo();
+
+    int getEdad();
+
+    int getPrioridad();
 }

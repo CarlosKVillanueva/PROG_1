@@ -2,3 +2,7 @@
 RemoteSystemsTempFiles/
 NS+/
 Guias/
+**/out/
+**/bin/
+**/.classpath
+**/.project

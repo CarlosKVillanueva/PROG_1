@@ -8,7 +8,7 @@ public enum FormaPago {
     private final int descuento;
 
 
-    private FormaPago(int descuento) {
+    FormaPago(int descuento) {
         this.descuento = descuento;
     }
 
