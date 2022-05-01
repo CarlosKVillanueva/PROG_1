@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>50</y>
+      <w>370</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Estacion
+--
+-id: long
+-descripcion: String
+--
+__+dameHoraActual(): int__
++cabinasConEfectivo():ArrayList&lt;Cabina&gt;
++promedioDemora():double
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>430</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>/MedioPago/
+--
+-id: long
+--
+
+
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>230</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Categoria
+--
+__+AUTO(10)__
+__+MOTO(8)__
+__+CAMION(15)__
+-tarifaBase: double
+--
+-Categoria(double)
++getTarifaBase(): double
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>90</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=n
+-cabinas</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>110</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>170</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+-categoria
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>810</y>
+      <w>290</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Sube
+--
+_-DESCUENTO=10:double_
+--
++obtenerDescuento(): double
+
+
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>800</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Pase
+--
+_-DESCUENTO_1=15:double_
+_-DESCUENTO_2=12:double_
+_-DIAS_DESCUENTO=5:int_
+--
++obtenerDescuento(): double
+
+
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>620</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Efectivo
+--
+_-DESCUENTO=0:double_
+--
++obtenerDescuento(): double
+
+
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>520</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>700</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>700</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;180.0;50.0;180.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>60</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Vehiculo
+--
+-patente: String
+--
++getTarifa(): double
+
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>70</y>
+      <w>310</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Cabina
+--
+_-RECARGO_PICO=8:double_
+_-COTA_MAX1=10:int_
+_-COTA_MAX2=20:int_
+_-COTA_MIN1=6:int_
+_-COTA_MIN2=17:int_
+
+-id: long
+--
++cobrar(Vehiculo): double
++calcularHoraPico(int):boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>670</x>
+      <y>270</y>
+      <w>120</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-medioPago</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>630</y>
+      <w>240</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>/PagoElectronico/
+--
+-diasDemora: int
+--
++getDiasDemora() :int
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>520</y>
+      <w>180</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;160.0;50.0;160.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>460</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interfaz&gt;&gt;
+Descuento
+--
++obtenerDescuento(): double
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>480</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+</diagram>

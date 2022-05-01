@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -13,7 +13,8 @@
 -
 + obtenerInforme(): Informe
 - porcentajeReprobados(): double
-- promTiempoAutosAprobados(): double</panel_attributes>
+- promTiempoAutosAprobados(): double
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -27,7 +28,8 @@
     <panel_attributes>Examen
 -
 - fecha: String
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -47,7 +49,8 @@ _- TOPE_SEGUNDOS: int = 120_
 - cantCircuitosAprobados(): int
 - apruebaMotorMenorCC: boolean
 - cumpleTiempoTotal(): boolean 
-</panel_attributes>
+
+bg=ORANGE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -65,7 +68,8 @@ _- SEG_MIN: int = 90_
 + aprobado(): boolean
 + getTiempo(): double
 
-</panel_attributes>
+
+bg=ORANGE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -105,7 +109,8 @@ _ -MAX FALTAS: int = 2_
 - nroFaltas: int
 -
 + getTiempoEnSeg(): int
-+ aprobado(): boolean</panel_attributes>
++ aprobado(): boolean
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -119,7 +124,8 @@ _ -MAX FALTAS: int = 2_
     <panel_attributes>/Evaluable/
 -
 /aprobado(): boolean/
-</panel_attributes>
+
+bg=CYAN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -199,7 +205,8 @@ m1=0..n
 - cilindrada: int
 
 
-</panel_attributes>
+
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -215,7 +222,8 @@ m1=0..n
 - tieneEspejos: boolean
 
 
-</panel_attributes>
+
+bg=ORANGE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -231,7 +239,8 @@ m1=0..n
 - cantPuertas: int
 
 
-</panel_attributes>
+
+bg=ORANGE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -294,7 +303,8 @@ m1=1
 -
 - DNI: String
 - nombre: String
-- mail: String</panel_attributes>
+- mail: String
+bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -312,7 +322,7 @@ m1=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1210</x>
+      <x>1090</x>
       <y>30</y>
       <w>350</w>
       <h>90</h>
@@ -322,7 +332,8 @@ m1=1</panel_attributes>
 - porcReprobados: double
 - promTiempoAutosAprobados: double
 -
-+ Informe(double, double)</panel_attributes>
++ Informe(double, double)
+bg=DARK_GRAY</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -330,10 +341,10 @@ m1=1</panel_attributes>
     <coordinates>
       <x>1000</x>
       <y>80</y>
-      <w>230</w>
+      <w>110</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>210.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

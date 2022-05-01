@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-83.84098360655736" y="-138.56459016393444">ar.edu.ort.clases.Sophie</node>
+    <node x="-78.84098360655736" y="530.2386885245902">ar.edu.ort.clases.PromediadorCalidad</node>
+    <node x="911.9770491803279" y="198.0">ar.edu.ort.clases.FuenteMarcado</node>
+    <node x="78.97377049180318" y="392.1193442622951">ar.edu.ort.clases.Calificable</node>
+    <node x="963.9770491803279" y="486.66885245901653">ar.edu.ort.clases.TipoMarcado</node>
+    <node x="-83.84098360655736" y="32.0">ar.edu.ort.clases.Programa</node>
+    <node x="446.57950819672135" y="198.0">ar.edu.ort.clases.FuenteProgramacion</node>
+    <node x="395.9908196721311" y="475.66885245901653">ar.edu.ort.clases.Metodo</node>
+    <node x="635.4222950819674" y="475.66885245901653">ar.edu.ort.clases.TipoLenguaje</node>
+    <node x="755.2777868852459" y="32.0">ar.edu.ort.clases.Fuente</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.FuenteProgramacion" target="ar.edu.ort.clases.Fuente" relationship="GENERALIZATION">
+      <point x="4.918032786918047E-4" y="-83.0" />
+      <point x="604.58" y="164.5" />
+      <point x="837.2782786885246" y="164.5" />
+      <point x="4.918032786918047E-4" y="49.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Fuente" target="ar.edu.ort.clases.Calificable" relationship="REALIZATION">
+      <point x="-82.93184571097447" y="32.697263397947665" />
+      <point x="320.65901639344264" y="114.19726339794767" />
+      <point x="320.65901639344264" y="420.0" />
+      <point x="84.0" y="0.8806557377048989" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sophie" target="ar.edu.ort.clases.Programa" relationship="TO_MANY">
+      <point x="3.0" y="50.0" />
+      <point x="0.0" y="-138.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.FuenteMarcado" target="ar.edu.ort.clases.TipoMarcado" relationship="TO_ONE">
+      <point x="0.0" y="83.0" />
+      <point x="0.0" y="-72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.FuenteProgramacion" target="ar.edu.ort.clases.TipoLenguaje" relationship="TO_ONE">
+      <point x="132.84278688524603" y="83.0" />
+      <point x="0.0" y="-83.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Metodo" target="ar.edu.ort.clases.Calificable" relationship="REALIZATION">
+      <point x="-106.0" y="-111.93016393442633" />
+      <point x="162.97377049180318" y="512.7386885245902" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.FuenteMarcado" target="ar.edu.ort.clases.Fuente" relationship="GENERALIZATION">
+      <point x="-4.9180327778231E-5" y="-83.0" />
+      <point x="1065.477" y="169.0" />
+      <point x="837.2782786885246" y="169.0" />
+      <point x="4.918032786918047E-4" y="49.5" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Programa" target="ar.edu.ort.clases.Fuente" relationship="TO_MANY">
+      <point x="171.0" y="-103.5" />
+      <point x="-82.0" y="-15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Programa" target="ar.edu.ort.clases.Calificable" relationship="REALIZATION">
+      <point x="75.81475409836054" y="138.0" />
+      <point x="0.0" y="-27.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.FuenteProgramacion" target="ar.edu.ort.clases.Metodo" relationship="TO_MANY">
+      <point x="-4.088688524590225" y="83.0" />
+      <point x="98.5" y="-149.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.939978563772776" showDependencies="true" x="577.5" y="327.5000000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
