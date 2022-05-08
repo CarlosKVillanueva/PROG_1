@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>170</y>
+      <w>360</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Sistema
+-
+- nombre:String
++ montosPorCajero(): double[]
++ informePedidos(): Informe[]
+- buscar(int,Object[]):Object 
++ mostrarPedidosConMasRiesgo(int):void
+
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>160</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Cajero
+-
+- id:int
+- apellido:String
+- antiguedadEnMeses:int
+-
++ getId():int
++ getApellido():String
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>430</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Robot
+-
+- codigo:int
+- nivelBateria:int
+-
++ getCodigo():int
++ getNivelBateria():int
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>480</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Pedido
+-
+- nombreCliente:String
+- idCajero:int
+- codigoRobot:int
+- monto:double
+-
++ getMonto():double
++ getCodigoRobot():int
++ getIdCajerro():int
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>170</y>
+      <w>270</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Informe
+-
+- monto:double
+- apellido:String
+- nivelBateria:int
+-
++ Informe(double,String,int)
+
+bg=YELLOW</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>240</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=5
+- cajeros</panel_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>310</y>
+      <w>200</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=8
+- robots</panel_attributes>
+    <additional_attributes>180.0;150.0;90.0;150.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>350</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n
+- pedidos</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>240</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>

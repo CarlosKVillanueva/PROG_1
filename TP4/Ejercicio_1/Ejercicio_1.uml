@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-628.8884236911599" y="319.23408737112123">ar.edu.ort.clases.Pedido</node>
+    <node x="-385.836833620718" y="-245.95354202527795">ar.edu.ort.clases.Informe</node>
+    <node x="-366.5115462290454" y="319.23408737112123">ar.edu.ort.clases.Cajero</node>
+    <node x="-408.5115462290454" y="-46.48456259355916">ar.edu.ort.clases.Sistema</node>
+    <node x="-158.13466876693087" y="319.23408737112123">ar.edu.ort.clases.Robot</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Cajero" relationship="TO_MANY">
+      <point x="27.493941453687057" y="149.0" />
+      <point x="-252.01760477535834" y="333.34131371519396" />
+      <point x="-279.5115462290454" y="333.34131371519396" />
+      <point x="0.0" y="-83.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Robot" relationship="TO_MANY">
+      <point x="129.0" y="0.0" />
+      <point x="-81.13466876693087" y="102.51543740644084" />
+      <point x="0.0" y="-72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Pedido" relationship="TO_MANY">
+      <point x="-129.0" y="0.0" />
+      <point x="-514.8884236911599" y="102.51543740644084" />
+      <point x="0.0" y="-116.00000000000006" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Informe" relationship="CREATE">
+      <point x="-8.825287391672589" y="-149.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Cajero" relationship="CREATE">
+      <point x="42.49394145368706" y="149.0" />
+      <point x="-237.01760477535834" y="333.34131371519396" />
+      <point x="-264.5115462290454" y="333.34131371519396" />
+      <point x="15.0" y="-83.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Sistema" target="ar.edu.ort.clases.Robot" relationship="CREATE">
+      <point x="129.0" y="-15.0" />
+      <point x="-66.13466876693087" y="87.51543740644084" />
+      <point x="15.0" y="-72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9485776805251641" showDependencies="true" x="-260.5" y="211.00000000000003" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
