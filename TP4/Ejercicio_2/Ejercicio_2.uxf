@@ -28,7 +28,10 @@
     </coordinates>
     <panel_attributes>Carta
 -
-- numero:int</panel_attributes>
+- numero:int
+-
++ getNumero():int
++ getPalo():Palo</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
