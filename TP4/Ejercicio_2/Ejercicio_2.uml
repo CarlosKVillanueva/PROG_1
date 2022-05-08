@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort</OriginalElement>
+  <nodes>
+    <node x="-376.91163055872295" y="111.2140756124333">ar.edu.ort.clases.Baraja</node>
+    <node x="309.1904218928163" y="111.2140756124333">ar.edu.ort.clases.Palo</node>
+    <node x="-12.381413911060463" y="111.2140756124333">ar.edu.ort.clases.Carta</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Baraja" target="ar.edu.ort.clases.Carta" relationship="TO_MANY">
+      <point x="114.5" y="26.0" />
+      <point x="-80.5" y="15.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Baraja" target="ar.edu.ort.clases.Carta" relationship="CREATE">
+      <point x="114.5" y="11.0" />
+      <point x="-80.5" y="0.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Carta" target="ar.edu.ort.clases.Palo" relationship="TO_ONE">
+      <point x="80.5" y="11.0" />
+      <point x="-78.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="54.500000000000114" y="237.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

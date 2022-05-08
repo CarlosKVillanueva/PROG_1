@@ -5,10 +5,10 @@ package ar.edu.ort.clases;
  */
 public class Baraja {
     public static final int CARTA_MAXIMA = 12;
-    Carta[] baraja;
+    Carta[] cartas;
 
     public Baraja() {
-        baraja = new Carta[48];
+        cartas = new Carta[48];
         generarBaraja();
     }
 
@@ -16,7 +16,7 @@ public class Baraja {
         int cont = 0;
         for (Palo palo : Palo.values()) {
             for (int i = 0; i < CARTA_MAXIMA; i++) {
-                baraja[cont] = new Carta(i + 1, palo.getPalo());
+                cartas[cont] = new Carta(i + 1, palo.getPalo());
                 cont++;
             }
         }
@@ -25,8 +25,8 @@ public class Baraja {
 
     public boolean estaOrdenada(Baraja barajaAChequear) {
         int i = 0;
-        boolean mismaCarta = false;
-        while (i < baraja.length && !mismaCarta) {
+        boolean mismaCarta = true;
+        while (i < cartas.length && mismaCarta) {
             mismaCarta = esMismaCarta(barajaAChequear, i);
             i++;
         }
@@ -34,12 +34,12 @@ public class Baraja {
     }
 
     private boolean esMismaCarta(Baraja barajaAChequear, int i) {
-        return baraja[i].getNumero() == barajaAChequear.baraja[i].getNumero() && baraja[i].getPaloEmoji().equals(barajaAChequear.baraja[i].getPaloEmoji());
+        return cartas[i].getNumero() == barajaAChequear.cartas[i].getNumero() && cartas[i].getPaloEmoji().equals(barajaAChequear.cartas[i].getPaloEmoji());
     }
 
 
     public void mostrarBaraja() {
-        for (Carta carta : baraja) {
+        for (Carta carta : cartas) {
             System.out.println(carta);
         }
     }
