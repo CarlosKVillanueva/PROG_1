@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>0</y>
+      <w>190</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>interface
+&lt;&lt;Dibujable&gt;&gt;
+--
+/+dibujar():void/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>190</y>
+      <w>260</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>/Componente/
+--
+-texto:String
+-alto:double
+-ancho:double
+-posX:int
+-posY:int
+-color:string
+-habilitado:boolean
+--
++getTexto():String
++setTexto(String): void
++getAlto():double
++getAncho():double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>530</y>
+      <w>440</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Ventana
+--
+-hayCursorActivado:boolean
+--
++dibujar():void
++agregar(Componente):boolean
+-validarSiTieneCursorActivado(componente): void
+-activarCursor(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>530</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Boton
+--
+
+--
++dibujar():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>530</y>
+      <w>270</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>CampoDeTexto
+--
+-multitexto:boolean
+-cursorActivado: boolean
+--
++dibujar():void
++activarCursor():void
++estaCursorActivado():boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>580</y>
+      <w>110</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+--
+_+MINIMIZADA_
+_+MAXIMIZADA_
+_+CERRADA_
+_+ABIERTA_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>440</y>
+      <w>450</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>430.0;10.0;430.0;50.0;10.0;50.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>440</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;50.0;10.0;50.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>440</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;210.0;50.0;210.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>130</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>350</y>
+      <w>500</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..* 
+-componentes</panel_attributes>
+    <additional_attributes>480.0;20.0;10.0;20.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>620</y>
+      <w>70</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=
+estado</panel_attributes>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>800</y>
+      <w>240</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>VentanaError
+--
++VentanaError(String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>710</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1230</x>
+      <y>530</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Etiqueta
+--
+-fuente:String
+--
++dibujar():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>440</y>
+      <w>500</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;480.0;50.0;480.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>710</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=
+botonAceptar</panel_attributes>
+    <additional_attributes>220.0;10.0;220.0;130.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>710</y>
+      <w>820</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=
+etiquetaMensajeError</panel_attributes>
+    <additional_attributes>800.0;10.0;800.0;170.0;10.0;170.0</additional_attributes>
+  </element>
+</diagram>

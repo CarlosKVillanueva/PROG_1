@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>804</x>
+      <y>204</y>
+      <w>252</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/Componente/
+-
+- texto: String
+- color: String
+- habilitado: boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>252</y>
+      <w>120</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Posicion
+-
+-x: int
+-y: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>276</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-posicion</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1200</x>
+      <y>156</y>
+      <w>144</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Tamanio
+-
+-ancho: int
+-alto: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>192</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-tamanio</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>84</y>
+      <w>144</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/Dibujable/
+-
+/+ dibujar(): void/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>156</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1284</x>
+      <y>432</y>
+      <w>228</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Etiqueta
+-
+- fuente: String
+-
++ dibujar(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>312</y>
+      <w>468</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;370.0;50.0;370.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>432</y>
+      <w>204</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Boton
+-
+-
++ dibujar(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>312</y>
+      <w>228</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;170.0;50.0;170.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>432</y>
+      <w>264</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CampoDeTexto
+-
+- multitexto: boolean
+- cursorActivo: boolean
+-
++ activarCursor(): void
++ dibujar(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>828</x>
+      <y>312</y>
+      <w>132</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>432</y>
+      <w>480</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>Ventana
+-
+- hayCursorActivo: boolean
+-
++ dibujar(): void
++ agregar(Componente): boolean
+- activarAlgunCursor(Componente): void
+- chequearCursorActivo(Componente): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>312</y>
+      <w>480</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>380.0;10.0;380.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>348</x>
+      <y>240</y>
+      <w>480</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+-componentes</panel_attributes>
+    <additional_attributes>380.0;20.0;10.0;20.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>48</x>
+      <y>408</y>
+      <w>132</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+Estado
+-
+_+MINIMIZADA_
+_+MAXIMIZADA_
+_+CERRADA_
+_+ABIERTA_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>480</y>
+      <w>108</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-estado</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>324</x>
+      <y>600</y>
+      <w>264</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>VentanaDeError
+-
+-
++VentanaDeError(String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>552</y>
+      <w>36</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>516</y>
+      <w>624</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-botonAceptar</panel_attributes>
+    <additional_attributes>490.0;10.0;490.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>516</y>
+      <w>864</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-etiquetaError</panel_attributes>
+    <additional_attributes>690.0;10.0;690.0;130.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>
