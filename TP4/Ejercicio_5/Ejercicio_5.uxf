@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>140</y>
+      <w>504</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>Empresa
+--
+- razonSocial:String
+--
++ obtenerCostoPorViajes():double[]
++ obtenerViajesXChoferCamion():int[][]
+- buscarCamion(id):Camion
+- buscarChofer(String):Chofer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>826</x>
+      <y>140</y>
+      <w>364</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>Camion
+--
+- id:int
+- costoPorKm:double
+--
++ getId():String
++ getCostoPorViaje():double
++ mismoId():boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>518</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>Chofer
+--
+- id:String
+- nombre:String
+- pagoPorViaje:double
+--
++ getId():String
++ getCostoPorViaje():double
++ mismoChofer(String):boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>98</x>
+      <y>532</y>
+      <w>518</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>Viaje
+--
+- idCamion:int
+- idChofer:String
+- kmViaje:double
+--
++ getIdCamion():int
++ getIdChofer():String
++ getKmViaje():double
++ mismoCamionChofer(int,String):boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>224</y>
+      <w>252</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>- camiones
+lt=&lt;-
+m1=10</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>280</y>
+      <w>266</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>- choferes
+lt=&lt;-
+m1=20</panel_attributes>
+    <additional_attributes>170.0;220.0;70.0;220.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>392</y>
+      <w>140</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>- viajes
+lt=&lt;-
+m1=*
+</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>658</y>
+      <w>266</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>252</y>
+      <w>672</w>
+      <h>588</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>420.0;10.0;460.0;10.0;460.0;400.0;60.0;400.0;60.0;330.0;10.0;330.0</additional_attributes>
+  </element>
+</diagram>

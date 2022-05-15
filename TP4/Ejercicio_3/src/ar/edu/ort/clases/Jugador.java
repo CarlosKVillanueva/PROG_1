@@ -43,12 +43,6 @@ public class Jugador {
         return numeroCamiseta;
     }
 
-
-    @Override
-    public String toString() {
-        return String.format("%s \t%d \t%s \t%s", apellido, numeroCamiseta, impor, puesto);
-    }
-
     public boolean mismoJugador(int camiseta) {
         return this.numeroCamiseta == camiseta;
     }
@@ -56,4 +50,10 @@ public class Jugador {
     public boolean mismoJugador(String apellido) {
         return this.apellido.equals(apellido);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s \t%d \t%s \t%s", apellido, numeroCamiseta, impor, puesto);
+    }
+
 }

@@ -5,66 +5,67 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>140</y>
-      <w>210</w>
-      <h>190</h>
-    </coordinates>
-    <panel_attributes>Seleccion
--
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>640</x>
-      <y>140</y>
-      <w>210</w>
+      <x>170</x>
+      <y>40</y>
+      <w>330</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Plantel
 -
-</panel_attributes>
++ cambio(int,int):void
++ cambioPorLesion(int,String):void
+- getPosicion(Jugador):int
+- buscarJugador(int):Jugador
+- buscarJugador(String):Jugador
++ mostrar():void
++ obtenerReservas():Jugador[]
++ cantJugadoresPorPosicion():int[]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>430</y>
-      <w>210</w>
+      <x>190</x>
+      <y>330</y>
+      <w>300</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>Jugador
 -
 - apellido:String
-- numeroCamiseta:int</panel_attributes>
+- numeroCamiseta:int
+-
++ getImpor():String
++ getPuesto():String
++ getApellido():String
++ getNroCamiseta():int
++ mismoJugador(int):boolean
++ mismoJugador(String):boolean</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>720</y>
-      <w>120</w>
+      <x>210</x>
+      <y>620</y>
+      <w>250</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 Posicion
 -
-_+ARQUERO_
-_+DEFENSOR_
-_+MEDIO_
-_+DELANTERO_
+_+ARQUERO(3,"Arquero")_
+_+DEFENSOR(6,"Defensor")_
+_+MEDIO(7,"Medio")_
+_+DELANTERO(7,"Delantero")_
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>730</x>
-      <y>610</y>
+      <x>320</x>
+      <y>510</y>
       <w>120</w>
       <h>130</h>
     </coordinates>
@@ -76,37 +77,37 @@ m1=1
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1050</x>
-      <y>430</y>
+      <x>640</x>
+      <y>330</y>
       <w>210</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 Importancia
 -
-_+TITULAR_
-_+SUPLENTE_
-_+RESERVA_</panel_attributes>
+_+TITULAR(11,"Titular")_
+_+SUPLENTE(7,"Suplente")_
+_+RESERVA(5,"Reserva")_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>490</y>
-      <w>230</w>
+      <x>480</x>
+      <y>390</y>
+      <w>180</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 - importancia</panel_attributes>
-    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>730</x>
-      <y>320</y>
+      <x>320</x>
+      <y>220</y>
       <w>120</w>
       <h>130</h>
     </coordinates>

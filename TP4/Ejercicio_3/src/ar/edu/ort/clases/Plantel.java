@@ -59,15 +59,11 @@ public class Plantel {
         if (camisetaA != camisetaB) {
             Jugador jugadorA = buscarJugador(camisetaA);
             int ubicacionA = getPosicion(jugadorA);
-
-            if (jugadorA != null && ubicacionA != -1) {
-                Jugador jugadorB = buscarJugador(camisetaB);
-                int ubicacionB = getPosicion(jugadorB);
-
-                if (jugadorB != null && ubicacionB != -1) {
-                    jugadores[ubicacionA] = jugadorB;
-                    jugadores[ubicacionB] = jugadorA;
-                }
+            Jugador jugadorB = buscarJugador(camisetaB);
+            int ubicacionB = getPosicion(jugadorB);
+            if ((jugadorA != null && ubicacionA != -1) && (jugadorB != null && ubicacionB != -1)) {
+                jugadores[ubicacionA] = jugadorB;
+                jugadores[ubicacionB] = jugadorA;
             }
         }
     }
@@ -146,6 +142,7 @@ public class Plantel {
     }
 
     public int[] cantJugadoresPorPosicion() {
+
         return new int[]{Posicion.ARQUERO.getCantidad(), Posicion.DEFENSOR.getCantidad(), Posicion.MEDIO.getCantidad(), Posicion.DELANTERO.getCantidad()};
     }
 /*

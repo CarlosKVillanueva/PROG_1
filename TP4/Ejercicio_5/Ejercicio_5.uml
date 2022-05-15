@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="234.0" y="-223.36145952109464">ar.edu.ort.clases.Empresa</node>
+    <node x="234.0" y="242.92018244013687">ar.edu.ort.clases.Viaje</node>
+    <node x="-7.313052309007958" y="242.92018244013687">ar.edu.ort.clases.Camion</node>
+    <node x="563.313052309008" y="242.92018244013687">ar.edu.ort.clases.Chofer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Chofer" relationship="CREATE">
+      <point x="123.0" y="-15.0" />
+      <point x="681.313052309008" y="-56.361459521094645" />
+      <point x="15.0" y="-104.99999999999997" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Camion" relationship="CREATE">
+      <point x="-123.0" y="0.0" />
+      <point x="82.68694769099204" y="-41.361459521094645" />
+      <point x="0.0" y="-93.99999999999997" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Chofer" relationship="TO_MANY">
+      <point x="123.0" y="0.0" />
+      <point x="666.313052309008" y="-41.361459521094645" />
+      <point x="0.0" y="-104.99999999999997" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Viaje" relationship="TO_MANY">
+      <point x="11.0" y="182.0" />
+      <point x="0.0" y="-115.99999999999997" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Empresa" target="ar.edu.ort.clases.Camion" relationship="TO_MANY">
+      <point x="-123.0" y="15.0" />
+      <point x="97.68694769099204" y="-26.361459521094645" />
+      <point x="15.0" y="-93.99999999999997" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.2197496522948539" showDependencies="true" x="391.0" y="135.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
