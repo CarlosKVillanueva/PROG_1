@@ -95,14 +95,14 @@ m1=10</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>602</x>
-      <y>280</y>
+      <y>364</y>
       <w>266</w>
-      <h>350</h>
+      <h>266</h>
     </coordinates>
     <panel_attributes>- choferes
 lt=&lt;-
 m1=20</panel_attributes>
-    <additional_attributes>170.0;220.0;70.0;220.0;70.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>170.0;160.0;70.0;160.0;70.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

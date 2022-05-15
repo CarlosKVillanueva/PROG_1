@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ar.edu.ort.clases</OriginalElement>
+  <nodes>
+    <node x="-138.65866872829332" y="-18.258382749905763">ar.edu.ort.clases.Cliente</node>
+    <node x="287.5459737046466" y="253.05020046400227">ar.edu.ort.clases.Pedido</node>
+    <node x="-576.6166501429232" y="302.03400518019475">ar.edu.ort.clases.Pais</node>
+    <node x="274.6590323464278" y="842.2588365909567">ar.edu.ort.clases.Producto</node>
+    <node x="-502.1018706424719" y="853.2588365909567">ar.edu.ort.clases.Vendedor</node>
+    <node x="-196.65866872829332" y="272.5430012173674">ar.edu.ort.clases.Frigorifico</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Vendedor" relationship="CREATE">
+      <point x="-143.5" y="317.5" />
+      <point x="81.0" y="-10.215835373589243" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Pedido" relationship="TO_MANY">
+      <point x="143.5" y="-254.4930012173674" />
+      <point x="-108.5" y="-15.000200464002262" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.Producto" relationship="TO_MANY">
+      <point x="-35.38694135821879" y="105.0" />
+      <point x="-15.0" y="-83.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Cliente" relationship="CREATE">
+      <point x="29.0" y="-325.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Cliente" target="ar.edu.ort.clases.Pais" relationship="TO_ONE">
+      <point x="-114.5" y="0.0" />
+      <point x="-499.61665014292316" y="86.74161725009424" />
+      <point x="0.0" y="-94.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Vendedor" relationship="TO_MANY">
+      <point x="-143.5" y="302.5" />
+      <point x="81.0" y="-25.215835373589243" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Producto" relationship="TO_MANY">
+      <point x="143.49966872829333" y="-1.217367412209569E-6" />
+      <point x="183.0" y="597.543" />
+      <point x="183.0" y="925.259" />
+      <point x="-101.00003234642782" y="1.6340904335265805E-4" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Cliente" relationship="TO_MANY">
+      <point x="44.0" y="-325.0" />
+      <point x="15.0" y="105.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Pedido" target="ar.edu.ort.clases.Producto" relationship="CREATE">
+      <point x="-20.38694135821879" y="105.0" />
+      <point x="0.0" y="-83.0" />
+    </edge>
+    <edge source="ar.edu.ort.clases.Frigorifico" target="ar.edu.ort.clases.Pedido" relationship="CREATE">
+      <point x="143.5" y="-269.4930012173674" />
+      <point x="-108.5" y="-30.000200464002262" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8368320610687023" showDependencies="true" x="-35.99999999999977" y="495.00000000000006" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
