@@ -30,6 +30,7 @@ public class Main {
 
         System.out.println(Arrays.toString(resto.montosPorCajero()));
         System.out.println(Arrays.toString(resto.informeDePedidos()));
+        System.out.println();
         resto.mostrarPedidosConMasRiesgo(10);
 
 

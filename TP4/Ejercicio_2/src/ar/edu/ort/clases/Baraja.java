@@ -5,10 +5,10 @@ package ar.edu.ort.clases;
  */
 public class Baraja {
     public static final int CARTA_MAXIMA = 12;
-    Carta[] cartas;
+    Carta[] baraja;
 
     public Baraja() {
-        cartas = new Carta[48];
+        baraja = new Carta[48];
         generarBaraja();
     }
 
@@ -16,17 +16,16 @@ public class Baraja {
         int cont = 0;
         for (Palo palo : Palo.values()) {
             for (int i = 0; i < CARTA_MAXIMA; i++) {
-                cartas[cont] = new Carta(i + 1, palo.getPalo());
+                baraja[cont] = new Carta(i + 1, palo.getPalo());
                 cont++;
             }
         }
-
     }
 
     public boolean estaOrdenada(Baraja barajaAChequear) {
         int i = 0;
         boolean mismaCarta = true;
-        while (i < cartas.length && mismaCarta) {
+        while (i < baraja.length && mismaCarta) {
             mismaCarta = esMismaCarta(barajaAChequear, i);
             i++;
         }
@@ -34,13 +33,17 @@ public class Baraja {
     }
 
     private boolean esMismaCarta(Baraja barajaAChequear, int i) {
-        return cartas[i].getNumero() == barajaAChequear.cartas[i].getNumero() && cartas[i].getPaloEmoji().equals(barajaAChequear.cartas[i].getPaloEmoji());
+        return baraja[i].getNumero() == barajaAChequear.baraja[i].getNumero() && baraja[i].getPaloString().equals(barajaAChequear.baraja[i].getPaloString());
     }
 
 
     public void mostrarBaraja() {
-        for (Carta carta : cartas) {
+        for (Carta carta : baraja) {
             System.out.println(carta);
         }
+    }
+
+    public void cambiarCarta(int i, String palo) {
+        baraja[i] = new Carta(i, palo);
     }
 }

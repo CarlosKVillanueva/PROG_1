@@ -6,7 +6,7 @@ package ar.edu.ort.clases;
 public class Carta {
     private int numero;
     private Palo palo;
-    private String paloEmoji;
+    private String paloString;
 
 
     public Carta(int numero, Palo palo) {
@@ -14,22 +14,22 @@ public class Carta {
         this.palo = palo;
     }
 
-    public Carta(int numero, String paloEmoji) {
+    public Carta(int numero, String paloString) {
         this.numero = numero;
-        this.paloEmoji = paloEmoji;
+        this.paloString = paloString;
     }
 
     public int getNumero() {
         return numero;
     }
 
-    public String getPaloEmoji() {
-        return this.paloEmoji;
+    public String getPaloString() {
+        return this.paloString;
     }
 
 
     @Override
     public String toString() {
-        return String.format("%d\t%s", numero, paloEmoji);
+        return String.format("%d\t%s", numero, paloString);
     }
 }

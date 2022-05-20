@@ -21,6 +21,5 @@ public class Main {
         System.out.println(Arrays.toString(seleccion.obtenerReservas()));
         System.out.println("*** Jugadores por Posicion ***");
         System.out.println(Arrays.toString(seleccion.cantJugadoresPorPosicion()));
-
     }
 }

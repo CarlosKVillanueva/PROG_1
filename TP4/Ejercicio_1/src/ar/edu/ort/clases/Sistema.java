@@ -32,7 +32,6 @@ public class Sistema {
             int nivelBatRand = (int) ((Math.random() * (100 - 1)) + 1);
             robots[i] = new Robot(i, nivelBatRand);
         }
-
     }
 
     public double[] montosPorCajero(){
@@ -76,12 +75,10 @@ public class Sistema {
     }
 
     public void mostrarPedidosConMasRiesgo(int nivelBatCritico){
-        for (Robot robot : robots) {
+        for (Pedido pedido : pedidos) {
+            Robot robot = (Robot) buscar(pedido.getCodigoRobot(), robots);
             if (robot.getNivelBateria() < nivelBatCritico) {
-                System.out.printf("Codigo Robot: %s Nivel Critico Bateria: %d\n",robot.getCodigo(),robot.getNivelBateria());
-                for (Pedido pedido : pedidos) {
-                    System.out.println(pedido);
-                }
+            System.out.printf("Codigo Robot: %s Nivel Bateria: %d%s Pedido: %s\n",robot.getCodigo(),robot.getNivelBateria(), "%", pedido);
             }
         }
     }
