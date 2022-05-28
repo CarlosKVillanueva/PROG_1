@@ -1,0 +1,51 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>210</x><y>70</y><w>340</w><h>180</h></coordinates><panel_attributes>CicloDeCharlas
+--
+_+ MAX_CHARLAS_X_TANDA : int = 5_
+_+ MAX_ESPECTADORES : int = 50_
+_+ DIAS_ENTRE_TANDAS : int = 10_
+_+ CANT_TANDAS : int = 2_
+- titulo : String
+--
++ CicloDeCharlas(String, Pelicula[], Fecha, int)
++ registrarEspectadorEnCharla(String, int) : Ticket
++ verCartelera() : void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>370</y><w>270</w><h>110</h></coordinates><panel_attributes>Charla
+--
+- numero : int
+- maxEspectadores : int
+--
++ Charla(int, Fecha, int)
++ buscarEspectador (String) : Espectador</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>390</y><w>140</w><h>60</h></coordinates><panel_attributes>Pelicula
+--
+- titulo : String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>610</y><w>140</w><h>110</h></coordinates><panel_attributes>Fecha
+--
++ Fecha(int, int, int)
+_+ hoy(): Fecha_
++ getDia(): int
++ getMes(): int
++ getAnio(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>610</y><w>140</w><h>60</h></coordinates><panel_attributes>Espectador
+--
+- nombre : String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>120</y><w>140</w><h>110</h></coordinates><panel_attributes>Ticket
+--
+- fecha : String
+- titulo : String
+- espectador : String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>240</y><w>300</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+- charlas
+m1=[CANT_TANDAS][1...MAX_CHARLAS_X_TANDA]
+
+</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>470</y><w>70</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+- fecha
+m1=1</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>470</y><w>140</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+- espectadores
+m1=0...maxEspectadores</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>160</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>190</y><w>270</w><h>500</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;480;250;480;250;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>410</y><w>130</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+- pelicula
+m1=1
+
+</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>220</y><w>70</w><h>190</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>50;170;50;10;10;10</additional_attributes></element></diagram>

@@ -57,13 +57,13 @@ public class Plantel {
 
     public void cambio(int camisetaA, int camisetaB) {
         if (camisetaA != camisetaB) {
-            Jugador jugadorA = buscarJugador(camisetaA);
-            int ubicacionA = getPosicion(jugadorA);
-            Jugador jugadorB = buscarJugador(camisetaB);
-            int ubicacionB = getPosicion(jugadorB);
-            if ((jugadorA != null && ubicacionA != -1) && (jugadorB != null && ubicacionB != -1)) {
-                jugadores[ubicacionA] = jugadorB;
-                jugadores[ubicacionB] = jugadorA;
+            int ubicacionA = getPosicion(camisetaA);
+            int ubicacionB = getPosicion(camisetaB);
+            Jugador sale = jugadores[ubicacionA];
+            Jugador entra = jugadores[ubicacionB];
+            if ((ubicacionA != -1) && (ubicacionB != -1)) {
+                jugadores[ubicacionA] = entra;
+                jugadores[ubicacionB] = sale;
             }
         }
     }
@@ -72,19 +72,18 @@ public class Plantel {
         Jugador lesionado = buscarJugador(nroCamiseta);
         Jugador reemplazo = buscarJugador(apellido);
         if (lesionado != null && reemplazo != null) {
-            int posLesionado = getPosicion(lesionado);
-            int posReemplazo = getPosicion(reemplazo);
+            int posLesionado = getPosicion(lesionado.getNumeroCamiseta());
+            int posReemplazo = getPosicion(reemplazo.getNumeroCamiseta());
 
             jugadores[posLesionado] = new Jugador(reemplazo.getApellido(), lesionado.getNumeroCamiseta(), lesionado.getImpor(), lesionado.getPuesto());
             jugadores[posReemplazo] = new Jugador(lesionado.getApellido(), reemplazo.getNumeroCamiseta(), reemplazo.getImpor(), reemplazo.getPuesto());
         }
     }
 
-    private int getPosicion(Jugador jugador) {
+    private int getPosicion(int camiseta) {
         int i = 0, posicion = -1;
-        boolean encontrado = false;
-        while (i < jugadores.length && !encontrado) {
-            if (jugadores[i] == jugador) {
+        while (i < jugadores.length && posicion == -1) {
+            if (jugadores[i].mismoJugador(camiseta)) {
                 posicion = i;
             }
             i++;
@@ -142,27 +141,8 @@ public class Plantel {
     }
 
     public int[] cantJugadoresPorPosicion() {
-
         return new int[]{Posicion.ARQUERO.getCantidad(), Posicion.DEFENSOR.getCantidad(), Posicion.MEDIO.getCantidad(), Posicion.DELANTERO.getCantidad()};
     }
-/*
 
-    public int[] cantJugadoresPorPosicion() {2e
-        int arquero = 0,defensor = 0,delantero = 0,medio = 0;
-
-        for (int i = 0; i < jugadores.length; i++) {
-            if (jugadores[i].getPuesto().equals(Posicion.ARQUERO.getPos())) {
-                arquero++;
-            } else if (jugadores[i].getPuesto().equals(Posicion.DEFENSOR.getPos())) {
-                defensor++;
-            } else if (jugadores[i].getPuesto().equals(Posicion.MEDIO.getPos())) {
-                medio++;
-            } else if (jugadores[i].getPuesto().equals(Posicion.DELANTERO.getPos())) {
-                delantero++;
-            }
-        }
-        return new int[]{arquero, defensor, medio, delantero};
-    }
-*/
 
 }
