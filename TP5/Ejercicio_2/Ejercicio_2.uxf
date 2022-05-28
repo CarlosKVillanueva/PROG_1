@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>410</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Tubo
+--
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(T): void
++ peek(): T
++ pop(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>160</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>PilaNodos&lt;T&gt;
+--
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(T): void
++ peek(): T
++ pop(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>300</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+
+
+//Herencia
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>420</y>
+      <w>210</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>ClubTenis
+--
+- razonSocial:String
+--
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>440</y>
+      <w>140</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 0..1/*
+-tubos
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>410</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Pelota
+--
+- cantUsos:int
+--
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>440</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>590</y>
+      <w>440</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>420.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
