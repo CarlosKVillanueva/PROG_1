@@ -64,10 +64,9 @@ public class ClubTenis {
     }
 
     public void mostrar(ArrayList<Pila<Pelota>> lista) {
-        int cont = 1;
+        System.out.println("Tubos en buen Estado: " + lista.size());
         for (Pila<Pelota> tubo : lista) {
-            System.out.printf("Tubo N %d\n",cont);
-            cont++;
+            System.out.println("Tubo: ");
             mostrarPelotas(tubo);
         }
     }

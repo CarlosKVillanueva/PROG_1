@@ -5,30 +5,15 @@ import ar.edu.ort.tdas.interfaces.*;
 
 public class Tubo {
 	private Pila<Pelota> pelotas;
+	private int idTubo;
+	private static int contador = 1;
 
 	public Tubo() {
 		pelotas = new PilaNodos<>();
+		idTubo = contador++;
 	}
 
-	public Tubo(int cantidadDeElementos) {
-		pelotas = new PilaNodos<>(cantidadDeElementos);
+	public int getIdTubo() {
+		return idTubo;
 	}
-
-	public boolean estaLleno() {
-		return pelotas.isFull();
-	}
-
-	public boolean estaVacio() {
-		return pelotas.isEmpty();
-	}
-
-	public Pelota extraer() {
-		return pelotas.pop();
-	}
-
-	public void guardar(Pelota pelota) {
-		pelotas.push(pelota);
-	}
-
-
 }
