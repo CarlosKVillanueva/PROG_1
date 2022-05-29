@@ -12,7 +12,7 @@ public class ClubTenis {
     private ArrayList<Pila<Pelota>> usados;
 
     public ClubTenis() {
-        tubos = new ArrayList<>();
+        this.tubos = new ArrayList<>();
     }
 
     public void agregarTubos() {
@@ -21,19 +21,20 @@ public class ClubTenis {
             while (!tubo.isFull()) {
                 tubo.push(new Pelota());
             }
-            tubos.add(tubo);
+            this.tubos.add(tubo);
         }
     }
 
     public void procesarPelotas() {
-        usados = new ArrayList<>();
+        this.usados = new ArrayList<>();
         int i = 0;
 
-        while (i < tubos.size()) {
-            if (esUsado(tubos.get(i))) {
-                this.usados.add(tubos.remove(i));
+        while (i < this.tubos.size()) {
+            if (esUsado(this.tubos.get(i))) {
+                this.usados.add(this.tubos.remove(i));
+            } else {
+                i++;
             }
-            i++;
         }
     }
 
@@ -42,9 +43,9 @@ public class ClubTenis {
         Pila<Pelota> aux = new PilaNodos<>();
         Pelota pelota;
 
-        while (!tubo.isEmpty()) {
+        while (!tubo.isEmpty() && !usado) {
             pelota = tubo.pop();
-            usado = pelota.getUsos() > 0;
+            usado = pelota.getUsos() != 0;
             aux.push(pelota);
         }
         while (!aux.isEmpty()) {
@@ -56,9 +57,9 @@ public class ClubTenis {
 
     public void mostrarLista(String lista) {
         if (lista.equals("tubos")) {
-            mostrar(tubos);
+            mostrar(this.tubos);
         } else if (lista.equals("usados")) {
-            mostrar(usados);
+            mostrar(this.usados);
         } else
             System.out.println("Lista incorrecta");
     }
