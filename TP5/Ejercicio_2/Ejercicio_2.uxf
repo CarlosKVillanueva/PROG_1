@@ -5,12 +5,13 @@
     <id>UMLClass</id>
     <coordinates>
       <x>550</x>
-      <y>410</y>
-      <w>210</w>
-      <h>150</h>
+      <y>350</y>
+      <w>260</w>
+      <h>240</h>
     </coordinates>
-    <panel_attributes>Tubo
+    <panel_attributes>&lt;&lt;PilaPelota&gt;&gt;
 --
+
 --
 + PilaNodos()
 + PilaNodos(int)
@@ -20,14 +21,15 @@
 + isEmpty(): boolean
 + isFull(): boolean
 
+
 bg=GREEN</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>160</y>
+      <x>580</x>
+      <y>140</y>
       <w>210</w>
       <h>150</h>
     </coordinates>
@@ -48,30 +50,32 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>640</x>
-      <y>300</y>
+      <x>670</x>
+      <y>280</y>
       <w>30</w>
-      <h>130</h>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 
 
 //Herencia
 bg=GREEN</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
+      <x>160</x>
       <y>420</y>
-      <w>210</w>
+      <w>240</w>
       <h>220</h>
     </coordinates>
     <panel_attributes>ClubTenis
 --
 - razonSocial:String
 --
++ procesarPelotas(): void
++esUsado() : boolean
 
 --
 
@@ -81,21 +85,21 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>430</x>
+      <x>390</x>
       <y>440</y>
-      <w>140</w>
+      <w>180</w>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m1= 0..1/*
+m1= 0..n
 -tubos
 </panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>850</x>
+      <x>890</x>
       <y>410</y>
       <w>210</w>
       <h>240</h>
@@ -104,7 +108,9 @@ m1= 0..1/*
 --
 - cantUsos:int
 --
-
+- setUsos():void
+- setEstado():void
+- getUsos()int
 --
 
 bg=GREEN</panel_attributes>
@@ -113,27 +119,75 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
+      <x>800</x>
       <y>440</y>
-      <w>120</w>
+      <w>110</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 
 //uso</panel_attributes>
-    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>430</x>
+      <x>390</x>
       <y>590</y>
-      <w>440</w>
+      <w>520</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 
 //uso</panel_attributes>
-    <additional_attributes>420.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>500.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>500</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 0..n
+-usados
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1220</x>
+      <y>410</y>
+      <w>130</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoPelota
+--
+
+_+NUEVA_
+_+USADA_
+_+GASTADA_
+
+--
+
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1090</x>
+      <y>430</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+- estado</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>

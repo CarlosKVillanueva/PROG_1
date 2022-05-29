@@ -8,10 +8,12 @@ import java.util.ArrayList;
  * Ejercicio_1@author CKVillanueva el 5/28/2022 | 2:35 PM
  */
 public class ClubTenis {
+    private String razonSocial;
     private ArrayList<Pila<Pelota>> tubos;
     private ArrayList<Pila<Pelota>> usados;
 
     public ClubTenis() {
+        this.razonSocial = "BA Lawn Tenis";
         this.tubos = new ArrayList<>();
     }
 
@@ -51,7 +53,6 @@ public class ClubTenis {
         while (!aux.isEmpty()) {
             tubo.push(aux.pop());
         }
-
         return usado;
     }
 
@@ -84,5 +85,12 @@ public class ClubTenis {
         while (!aux.isEmpty()) {
             tubo.push(aux.pop());
         }
+    }
+
+    @Override
+    public String toString() {
+        return "ClubTenis{" +
+                "razonSocial='" + razonSocial + '\'' +
+                '}';
     }
 }

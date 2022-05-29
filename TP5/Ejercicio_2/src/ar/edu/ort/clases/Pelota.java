@@ -25,7 +25,7 @@ public class Pelota {
 		this.usos = (usosRand < 0.8) ? 0 : (usosRand > 0.8 && usosRand < 0.9) ? new Random().nextInt(1, 7) : new Random().nextInt(7, 10);
 	}
 
-	public void setEstado() {
+	private void setEstado() {
 		this.estado = (usos == 0) ? EstadoPelota.NUEVA : (usos > 0 && usos <= USADA) ? EstadoPelota.USADA : EstadoPelota.GASTADA;
 	}
 
