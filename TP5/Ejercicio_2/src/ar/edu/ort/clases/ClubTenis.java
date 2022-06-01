@@ -3,18 +3,19 @@ package ar.edu.ort.clases;
 import ar.edu.ort.tdas.implementaciones.PilaNodos;
 import ar.edu.ort.tdas.interfaces.Pila;
 import java.util.ArrayList;
+import java.util.Stack;
 
 /**
  * Ejercicio_1@author CKVillanueva el 5/28/2022 | 2:35 PM
  */
 public class ClubTenis {
     private String razonSocial;
-    private ArrayList<Pila<Pelota>> tubos;
+    private ArrayList<Pila<Pelota>> nuevos;
     private ArrayList<Pila<Pelota>> usados;
 
     public ClubTenis() {
         this.razonSocial = "BA Lawn Tenis";
-        this.tubos = new ArrayList<>();
+        this.nuevos = new ArrayList<>();
     }
 
     public void agregarTubos() {
@@ -23,7 +24,7 @@ public class ClubTenis {
             while (!tubo.isFull()) {
                 tubo.push(new Pelota());
             }
-            this.tubos.add(tubo);
+            this.nuevos.add(tubo);
         }
     }
 
@@ -31,9 +32,9 @@ public class ClubTenis {
         this.usados = new ArrayList<>();
         int i = 0;
 
-        while (i < this.tubos.size()) {
-            if (esUsado(this.tubos.get(i))) {
-                this.usados.add(this.tubos.remove(i));
+        while (i < this.nuevos.size()) {
+            if (esUsado(this.nuevos.get(i))) {
+                this.usados.add(this.nuevos.remove(i));
             } else {
                 i++;
             }
@@ -47,7 +48,7 @@ public class ClubTenis {
 
         while (!tubo.isEmpty() && !usado) {
             pelota = tubo.pop();
-            usado = pelota.getUsos() != 0;
+            usado = pelota.getUsos() > 0;
             aux.push(pelota);
         }
         while (!aux.isEmpty()) {
@@ -58,7 +59,7 @@ public class ClubTenis {
 
     public void mostrarLista(String lista) {
         if (lista.equals("tubos")) {
-            mostrar(this.tubos);
+            mostrar(this.nuevos);
         } else if (lista.equals("usados")) {
             mostrar(this.usados);
         } else

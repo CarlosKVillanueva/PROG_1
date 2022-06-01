@@ -22,7 +22,7 @@ public class Pelota {
 
 	private void setUsos() {
 		double usosRand = Math.random();
-		this.usos = (usosRand < 0.8) ? 0 : (usosRand > 0.8 && usosRand < 0.9) ? new Random().nextInt(1, 7) : new Random().nextInt(7, 10);
+		this.usos = (usosRand < 0.8) ? 0 : (usosRand > 0.8 && usosRand < 0.9) ? new Random().nextInt(1, 7) : new Random().nextInt(8, 10);
 	}
 
 	private void setEstado() {

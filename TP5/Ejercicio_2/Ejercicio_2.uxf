@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>350</y>
-      <w>260</w>
-      <h>240</h>
+      <x>729</x>
+      <y>225</y>
+      <w>234</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>&lt;&lt;PilaPelota&gt;&gt;
 --
@@ -28,10 +28,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
-      <y>140</y>
-      <w>210</w>
-      <h>150</h>
+      <x>756</x>
+      <y>36</y>
+      <w>189</w>
+      <h>135</h>
     </coordinates>
     <panel_attributes>PilaNodos&lt;T&gt;
 --
@@ -50,10 +50,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>670</x>
-      <y>280</y>
-      <w>30</w>
-      <h>90</h>
+      <x>837</x>
+      <y>162</y>
+      <w>27</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 
@@ -65,10 +65,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>420</y>
-      <w>240</w>
-      <h>220</h>
+      <x>378</x>
+      <y>288</y>
+      <w>216</w>
+      <h>198</h>
     </coordinates>
     <panel_attributes>ClubTenis
 --
@@ -85,10 +85,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>440</y>
-      <w>180</w>
-      <h>50</h>
+      <x>585</x>
+      <y>306</y>
+      <w>162</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1= 0..n
@@ -99,10 +99,10 @@ m1= 0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>890</x>
-      <y>410</y>
-      <w>210</w>
-      <h>240</h>
+      <x>1035</x>
+      <y>279</y>
+      <w>189</w>
+      <h>216</h>
     </coordinates>
     <panel_attributes>Pelota
 --
@@ -119,10 +119,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>440</y>
-      <w>110</w>
-      <h>40</h>
+      <x>954</x>
+      <y>306</y>
+      <w>99</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 
@@ -132,10 +132,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>590</y>
-      <w>520</w>
-      <h>40</h>
+      <x>585</x>
+      <y>441</y>
+      <w>468</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 
@@ -145,10 +145,10 @@ bg=GREEN</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>500</y>
-      <w>180</w>
-      <h>50</h>
+      <x>585</x>
+      <y>360</y>
+      <w>162</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1= 0..n
@@ -159,10 +159,10 @@ m1= 0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1220</x>
-      <y>410</y>
-      <w>130</w>
-      <h>180</h>
+      <x>1332</x>
+      <y>279</y>
+      <w>117</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>&lt;&lt;enum&gt;&gt;
 EstadoPelota
@@ -180,14 +180,258 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1090</x>
-      <y>430</y>
-      <w>150</w>
-      <h>50</h>
+      <x>1215</x>
+      <y>297</y>
+      <w>135</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1= 1
 - estado</panel_attributes>
     <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>0</y>
+      <w>189</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Tubo
+--
+
+--
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>927</y>
+      <w>234</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Pila&gt;&gt;
+Pelotas
+--
+
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(T): void
++ peek(): T
++ pop(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>729</y>
+      <w>189</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>PilaNodos&lt;T&gt;
+--
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(T): void
++ peek(): T
++ pop(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>801</x>
+      <y>855</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+
+
+//Herencia
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>990</y>
+      <w>216</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>ClubTenis
+--
+- razonSocial:String
+--
++ procesarPelotas(): void
++ esUsado() : boolean
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>1008</y>
+      <w>162</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 0..n
+-tubos
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1026</x>
+      <y>981</y>
+      <w>189</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>Pelota
+--
+- cantUsos:int
+--
+- setUsos():void
+- setEstado():void
+- getUsos()int
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>918</x>
+      <y>1008</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>1143</y>
+      <w>459</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>490.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>243</x>
+      <y>1062</y>
+      <w>162</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 0..n
+-usados
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1323</x>
+      <y>981</y>
+      <w>117</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+EstadoPelota
+--
+
+_+NUEVA_
+_+USADA_
+_+GASTADA_
+
+--
+
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1206</x>
+      <y>999</y>
+      <w>135</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+- estado</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>963</y>
+      <w>207</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>Tubo
+--
+- idTubo:int
+--
++ agregar(Pelota):void
++ sacar():Pelota
++ estaVacio():boolean
++ estaLleno():boolean
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>999</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+-tubo
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
