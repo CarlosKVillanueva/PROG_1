@@ -1,8 +1,6 @@
 package ar.edu.ort.clases;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Objects;
 
 /**
  * Ejercicio_10@author CKVillanueva el 5/27/2022 | 9:23 PM
@@ -11,22 +9,17 @@ public class Charla {
     private LocalDate fecha;
     private int nroCharla;
     private Espectador[] espectadores;
+    private int localidesDisponibles;
+
+
+
 
     public Charla(LocalDate fecha, int nroCharla, int cantEspectadores) {
         this.fecha = fecha;
         this.nroCharla = nroCharla;
         this.espectadores = new Espectador[cantEspectadores];
+        this.localidesDisponibles = cantEspectadores;
     }
-
-    /*private Espectador[] generarEspectadores(int cantEspectadores) {
-
-        Espectador[] espectadores = new Espectador[cantEspectadores];
-        *//*for (int i = 0; i < cantEspectadores; i++) {
-            espectadores[i] = new Espectador("Espectador " + i, i);
-        }*//*
-        return espectadores;
-    }*/
-
 
     public void mostrarCharla() {
         System.out.println("Fecha: " + fecha + " Nro de charla: " + nroCharla);
@@ -46,6 +39,24 @@ public class Charla {
         return espectadores[espectadores.length -1] == null;
     }
 
+    public void agregarEspectador(Espectador espectador) {
+
+        int i = 0;
+        boolean corte = true;
+        while (i < espectadores.length && corte) {
+            if (espectadores[i] == null) {
+                espectadores[i] = espectador;
+                this.localidesDisponibles--;
+                corte = false;
+            }
+            i++;
+        }
+    }
+
+    public int getLocalidesDisponibles() {
+        return localidesDisponibles;
+    }
+
     public LocalDate getFecha() {
         return this.fecha;
     }
@@ -54,22 +65,4 @@ public class Charla {
         return nroCharla;
     }
 
-    public int getVacantes() {
-        return (int) Arrays
-                .stream(espectadores)
-                .filter(Objects::isNull)
-                .count();
-    }
-
-    public void agregarEspectador(Espectador espectador) {
-        int i = 0;
-        boolean corte = true;
-        while (i < espectadores.length && corte) {
-            if (espectadores[i] == null) {
-                espectadores[i] = espectador;
-                corte = false;
-            }
-            i++;
-        }
-    }
 }

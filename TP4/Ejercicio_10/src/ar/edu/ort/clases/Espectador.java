@@ -20,4 +20,5 @@ public class Espectador {
     public int getNroCharla() {
         return this.nroCharla;
     }
+
 }

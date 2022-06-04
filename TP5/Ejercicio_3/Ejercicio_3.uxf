@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>290</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Impresora
+--
+- hojas:int
+- encendida:boolean
+--
++ agregarDocumento(documento):void
++ imprimir:void
+- imprimirDocumento:void
+- tieneHojasSuficientes():boolean
+
+--
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>250</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ColaDocumento
+--
+- fecha:String
+- cantCarillas:int
+- dobleFaz:boolean
+--
++ add(T): void
++ get(): T
++ remove(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>30</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>ColaNodos&lt;T&gt;
+--
+--
++ ColaNodos()
++ ColaNodos(int)
++ add(T): void
++ get(): T
++ remove(): T
++ isEmpty(): boolean
++ isFull(): boolean
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>290</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Documento
+--
+- fecha:String
+- cantCarillas:int
+- dobleFaz:boolean
+--
++ getHojas()
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>310</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 0..n
+-documentos
+</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>440</y>
+      <w>470</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>290</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>170</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+
+
+//Herencia
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>

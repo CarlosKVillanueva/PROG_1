@@ -1,7 +1,6 @@
 package ar.edu.ort.clases;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 
 /**
  * Ejercicio_10@author CKVillanueva el 5/27/2022 | 7:37 PM
@@ -14,12 +13,14 @@ public class CicloCharlas {
     private int cantEspectadores;
     private Charla[][] charlas;
     private LocalDate fechaInicio;
+//    private int[][] localidadesOcupadas;
 
     public CicloCharlas(String nombreCiclo, String[] titulosPeliculas, LocalDate fechaInicio, int cantEspectadores) {
         this.nombreCiclo = nombreCiclo;
         this.titulosPeliculas = titulosPeliculas;
         this.fechaInicio = fechaInicio;
         this.cantEspectadores = setCantidadEspectadores(cantEspectadores);
+//        this.localidadesOcupadas = new int[TANDAS][titulosPeliculas.length];
         this.charlas = generarCharlas(fechaInicio,titulosPeliculas, cantEspectadores);
     }
 
@@ -50,7 +51,9 @@ public class CicloCharlas {
         boolean apto = charla.hayVacante() && !charla.noEstaRegistrado(espectador);
 
         if (apto) {
+
             charla.agregarEspectador(espectador);
+//            localidadesOcupadas[posTanda][posCharla]++;
             ticket = new Ticket(espectador.getNombre(), charla.getFecha(), titulosPeliculas[charla.getNroCharla() - 1]);
         }
 
@@ -76,10 +79,12 @@ public class CicloCharlas {
             System.out.printf("*** Tanda %d ***\n", tanda + 1);
             for (int icharla = 0; icharla < titulosPeliculas.length; icharla++) {
                 Charla charla = charlas[tanda][icharla];
-                System.out.printf("%s\t\tCharla %d\t\t%s\t\t(%d vaacantes)\n",charla.getFecha(), charla.getNroCharla(),titulosPeliculas[icharla],charla.getVacantes());
+//                int vacantes = MAX_ESPECTADORES - localidadesOcupadas[tanda][icharla];
+                System.out.printf("%s\t\tCharla %d\t\t%s\t\t(%d vaacantes)\n",charla.getFecha(), charla.getNroCharla(),titulosPeliculas[icharla],charla.getLocalidesDisponibles());
             }
         }
     }
+
 }
 
 
