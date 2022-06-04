@@ -12,6 +12,15 @@ public class Pelota {
         this.tipoPelota = tipoPelota;
     }
 
+    public boolean mismoElemento(int codigo) {
+        return this.codigo == codigo;
+    }
+
+    public TipoPelota getTipoPelota() {
+        return this.tipoPelota;
+    }
+
+
     @Override
     public String toString() {
         return "Pelota{" +
@@ -20,11 +29,4 @@ public class Pelota {
                 '}';
     }
 
-    public boolean mismoElemento(int codigo) {
-        return this.codigo == codigo;
-    }
-
-    public TipoPelota getTipoPelota() {
-        return this.tipoPelota;
-    }
 }

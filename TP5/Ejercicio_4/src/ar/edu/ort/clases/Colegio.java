@@ -73,13 +73,13 @@ public class Colegio {
 
         int[] cantTipo = new int[TipoPelota.values().length];
         for (int i = 0; i < CANT_PILAS; i++) {
-            cantTipo = contarTipo(canasto[i], cantTipo);
+            contarTipo(canasto[i], cantTipo);
         }
 
         return cantTipo;
     }
 
-    private int[] contarTipo(PilaNodos<Pelota> pilaPelotas, int[] cantTipo) {
+    private void contarTipo(PilaNodos<Pelota> pilaPelotas, int[] cantTipo) {
 
         Pelota p;
         PilaNodos<Pelota> aux = new PilaNodos<>();
@@ -96,7 +96,6 @@ public class Colegio {
         while (!aux.isEmpty()) {
             pilaPelotas.push(aux.pop());
         }
-        return cantTipo;
     }
 
 
