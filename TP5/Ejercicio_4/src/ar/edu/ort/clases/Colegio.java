@@ -17,7 +17,7 @@ public class Colegio {
 
     private void generarPilas() {
         for (int i = 0; i < 3; i++) {
-            canasto[i] =  new PilaNodos<>(TOPE_PILAS);
+            canasto[i] = new PilaNodos<>(TOPE_PILAS);
         }
     }
 
@@ -39,11 +39,11 @@ public class Colegio {
         }
         return seAgrego;
     }
-    
+
     public Pelota buscarPelota(int codigo) {
         int i = 0;
         Pelota pelotaBuscada = null;
-    
+
         while (i < canasto.length && pelotaBuscada == null) {
             pelotaBuscada = buscarEnPila(canasto[i], codigo);
             i++;
@@ -55,7 +55,7 @@ public class Colegio {
     private Pelota buscarEnPila(PilaNodos<Pelota> pilaPelotas, int codigo) {
         Pelota p, pelotaBuscada = null;
         PilaNodos<Pelota> aux = new PilaNodos<>();
-        while (!pilaPelotas.isEmpty()) {
+        while (!pilaPelotas.isEmpty() && pelotaBuscada == null) {
             p = pilaPelotas.pop();
             if (p.mismoElemento(codigo)) {
                 pelotaBuscada = p;
@@ -69,27 +69,29 @@ public class Colegio {
     }
 
 
-    public int[] pelotasPorTipo() {
+    public int[][] pelotasPorTipo() {
 
-        int[] cantTipo = new int[TipoPelota.values().length];
-        for (int i = 0; i < CANT_PILAS; i++) {
-            contarTipo(canasto[i], cantTipo);
+        int[][] cantTipo = new int[CANT_PILAS][TipoPelota.values().length];
+
+        for (int fila = 0; fila < CANT_PILAS; fila++) {
+            contarTipo(canasto[fila], cantTipo, fila);
         }
 
         return cantTipo;
     }
 
-    private void contarTipo(PilaNodos<Pelota> pilaPelotas, int[] cantTipo) {
+    private void contarTipo(PilaNodos<Pelota> pilaPelotas, int[][] cantTipo, int fila) {
 
         Pelota p;
         PilaNodos<Pelota> aux = new PilaNodos<>();
 
         while (!pilaPelotas.isEmpty()) {
             p = pilaPelotas.pop();
+
             switch (p.getTipoPelota()) {
-                case FUTBOL -> cantTipo[TipoPelota.FUTBOL.ordinal()]++;
-                case VOLEY -> cantTipo[TipoPelota.VOLEY.ordinal()]++;
-                case BASKET -> cantTipo[TipoPelota.BASKET.ordinal()]++;
+                case FUTBOL -> cantTipo[fila][TipoPelota.FUTBOL.ordinal()]++;
+                case VOLEY -> cantTipo[fila][TipoPelota.VOLEY.ordinal()]++;
+                case BASKET -> cantTipo[fila][TipoPelota.BASKET.ordinal()]++;
             }
             aux.push(p);
         }

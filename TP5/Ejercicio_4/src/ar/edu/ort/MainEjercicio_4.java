@@ -17,7 +17,7 @@ public class MainEjercicio_4 {
         System.out.println(colegio.buscarPelota(8));
         System.out.println(colegio.buscarPelota(81));
         colegio.verPelotasEnTopes();
-        System.out.println(Arrays.toString(colegio.pelotasPorTipo()));
+        System.out.println(Arrays.deepToString(colegio.pelotasPorTipo()));
     }
 
     private static void llenarCanasto(Colegio colegio) {
