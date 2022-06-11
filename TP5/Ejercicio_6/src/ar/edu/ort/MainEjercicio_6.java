@@ -27,7 +27,7 @@ public class MainEjercicio_6 {
     private static void llenarPila(Pila<Factura> facturaPila) {
 
         for (int i = 0; i < 50; i++) {
-            int randMes = new Random().nextInt(1, 13);
+            int randMes = new Random().nextInt(1, 12);
             double randMonto = new Random().nextDouble(100.01, 200.01);
             int randServicio = new Random().nextInt(0, 4);
             facturaPila.push(new Factura(i+1,randMes,randMonto, Servicio.values()[randServicio]));

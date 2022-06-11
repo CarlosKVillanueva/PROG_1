@@ -3,7 +3,7 @@ package ar.edu.ort.clases;
 import ar.edu.ort.tdas.implementaciones.ListaOrdenadaNodos;
 
 /**
- * Ejercicio_6@author CKVillanueva el 6/5/2022 | 12:11 PM
+ * Ejercicio_6@author CKVillanueva el 6/5/2022 | 11:40 PM
  */
 public class FacturasOrdenadasPorMesAscendente extends ListaOrdenadaNodos<Integer, Factura> {
     @Override

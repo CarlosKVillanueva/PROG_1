@@ -12,11 +12,11 @@ public class Academia {
     }
 
     public Estadistica obtenerEstadistica(String codigo) {
-        Estadistica estadistica = null;
-        Curso curso;
         if (codigo == null || codigo.isEmpty()) {
             throw new RuntimeException("El codigo no puede ser nulo o Vacio");
         }
+        Estadistica estadistica = null;
+        Curso curso;
         curso = cursosXCodAsc.search(codigo);
         if (curso != null) {
             estadistica = new Estadistica(curso.getTitulo(), curso.getPromEdad());
@@ -39,8 +39,11 @@ public class Academia {
         cursosXCodAsc.add(curso);
     }
 
-    public Alumno[] mostrarTop5PorCurso(String pr1) {
-        return cursosXCodAsc.search(pr1).top5AlumnosMasLongevos();
+    public Alumno[] mostrarTop5PorCurso(String codigo) {
+        if (codigo == null || codigo.isEmpty()) {
+            throw new RuntimeException("El codigo no puede ser nulo o Vacio");
+        }
+        return cursosXCodAsc.search(codigo).top5AlumnosMasLongevos();
     }
 
     @Override

@@ -29,4 +29,14 @@ public class Ticket {
     public boolean mismTicket(int id) {
         return this.id == id;
     }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "id=" + id +
+                ", fecha=" + fecha +
+                ", sector=" + sector +
+                ", prioridad=" + prioridad +
+                '}';
+    }
 }

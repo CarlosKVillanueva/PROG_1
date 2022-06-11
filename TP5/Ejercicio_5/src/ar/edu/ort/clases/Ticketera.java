@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class Ticketera {
     private String nombre;
-    Cola<Ticket> tickets;
+    private Cola<Ticket> tickets;
 
 
     public Ticketera(String nombre) {
@@ -20,11 +20,10 @@ public class Ticketera {
     }
 
     public void agregarTickets() {
-        Ticket ticket;
         for (int i = 0; i < 30; i++) {
             int sectorRand = new Random().nextInt(0, 4);
             int prioriRand = new Random().nextInt(0, 3);
-            tickets.add(new Ticket(i+1, LocalDate.of(2022,04,20), Sector.values()[sectorRand], Prioridad.values()[prioriRand]));
+            tickets.add(new Ticket(i+1, LocalDate.of(2022,4,20), Sector.values()[sectorRand], Prioridad.values()[prioriRand]));
         }
     }
 
@@ -60,5 +59,12 @@ public class Ticketera {
         }
 
         return resultado;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticketera{" +
+                "nombre='" + nombre + '\'' +
+                '}';
     }
 }

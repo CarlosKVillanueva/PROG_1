@@ -26,27 +26,27 @@ public class MainEjercicio_7 {
         academia.agregarCursos(curso5);
         academia.agregarCursos(curso6);
 
-        try {
-            academia.obtenerEstadistica(null);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());;
-        }
-        try {
-            academia.obtenerEstadistica("");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());;
-        }
-        try {
-            System.out.println(academia.obtenerEstadistica("PNT1"));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());;
-        }
+        obtenerEstadisticas(academia, null);
+        obtenerEstadisticas(academia, "");
+        obtenerEstadisticas(academia, "PNT1");
 
         academia.listadoDeCursosPorNivel();
 
-        System.out.println(Arrays.toString(academia.mostrarTop5PorCurso("PR1")));
+        try {
+            System.out.println(Arrays.toString(academia.mostrarTop5PorCurso("PR1")));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
         System.out.println();
+    }
+
+    private static void obtenerEstadisticas(Academia academia, String codigo) {
+        try {
+            academia.obtenerEstadistica(codigo);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }

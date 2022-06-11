@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>96</x>
+      <y>296</y>
+      <w>320</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Empresa
+--
+
+--
++ cantViajesPorDestino(String):int
+- tieneDestino(String):boolean
++ cantDestinosPorCamionChofer():int[][]
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>296</y>
+      <w>192</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>/Camion/
+--
+_+MAX_KM_1:int=200000_
+_+MAX_KM_2:int=250000_
+- nroPatente:int
+- anioFabricacion:int
+- kmRecorridos:int
+--
++ mostrarId():int
+# getKmRecorridos():int
+# getAntiguedad(int):int
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>400</y>
+      <w>528</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= [80]
+-flota
+</panel_attributes>
+    <additional_attributes>640.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>32</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Chofer
+--
+- nroLegajo:int
+- nombre:String
+- edad:int
+--
++mostrarId():int
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>40</y>
+      <w>672</w>
+      <h>272</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= [20]
+-staff
+</panel_attributes>
+    <additional_attributes>820.0;20.0;10.0;20.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>816</x>
+      <y>504</y>
+      <w>176</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>TranspLiquido
+--
+_+ANIOS_CORTE=5:int_
+- capacidadLitros:int
+- cantidadTanques:int
+--
++esRenovable():boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>504</y>
+      <w>184</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>TranspSolido
+--
+_+LARGO_MAX:int=6_
+- ancho:int
+- alto:int
+- largo:int
+--
++esRenovable():boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>888</x>
+      <y>440</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+
+
+//Herencia
+bg=GREEN</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;40.0;10.0;40.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>992</x>
+      <y>440</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+
+
+//Herencia
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;140.0;40.0;140.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>712</y>
+      <w>216</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Viaje
+--
+
+--
++ contarDestinos():boolean
++ getIdCamion():int
++ getIdChofer():int
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>712</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Destino
+--
+- nombre:String
+- telefono:String
+--
++ mismoDestino(String):boolean
+
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>184</x>
+      <y>528</y>
+      <w>184</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ColaViajes
+--
+--
++ ColaNodos()
++ ColaNodos(int)
++ add(ColaViajes): void
++ get(): ColaViajes
++ remove(): ColaViajes
++ isEmpty(): boolean
++ isFull(): boolean
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>712</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>PilaDestinos
+--
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(Destino): void
++ peek(): Destino
++ pop(): Destino
++ isEmpty(): boolean
++ isFull(): boolean
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>440</y>
+      <w>104</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+-colaViajes
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>640</y>
+      <w>24</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>440</y>
+      <w>24</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;340.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>832</y>
+      <w>512</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>620.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>728</y>
+      <w>256</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+-pilaDestinos
+</panel_attributes>
+    <additional_attributes>300.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>816</x>
+      <y>728</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>504</y>
+      <w>192</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Fecha
+--
+
+--
+_+aniosHastaHoy(int):int_
+
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>104</y>
+      <w>936</w>
+      <h>816</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1= 1
+-chofer
+</panel_attributes>
+    <additional_attributes>980.0;10.0;1140.0;10.0;1140.0;1000.0;10.0;1000.0;10.0;950.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>392</y>
+      <w>840</w>
+      <h>512</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-camion
+</panel_attributes>
+    <additional_attributes>920.0;10.0;1030.0;10.0;1030.0;620.0;10.0;620.0;10.0;590.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>104</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Mostrable
+--
+/+mostrarId():int/
+
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>168</y>
+      <w>248</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+
+//interfaz  la flecha apunta a la interfaz
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;290.0;130.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>168</y>
+      <w>248</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+
+//interfaz  la flecha apunta a la interfaz
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0;290.0;130.0;290.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>584</x>
+      <y>424</y>
+      <w>352</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;20.0;420.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>336</y>
+      <w>408</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>CamLiqARenovarPorAntiguedadDesc&lt;Integer,Camion&gt;
+--
+--
++ compare(Camion,CamionT): int
++ compareByKey(Integer,Camion): int
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>568</x>
+      <y>184</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Mostrable
+--
+/+esRenovable():boolean/
+
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>248</y>
+      <w>264</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+
+//interfaz  la flecha apunta a la interfaz
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;310.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>352</y>
+      <w>80</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>352</y>
+      <w>64</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

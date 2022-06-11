@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>310</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>/Producto/
+--
+- nombre: String
+- descripcion: String
+--
+/+ getTipoProducto():TipoProducto/
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>310</y>
+      <w>120</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Estado
+--
+_+BUENO_
+_+REGULAR_
+_+MALO_
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>80</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>/Evaluable/
+--
+/+evaluar(): Estado/
+
+bg=CYAN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>860</x>
+      <y>160</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>600</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Vehiculo
+--
+- cantKm: int
+--
++ evaluar(): Estado
++ getTipoProducto():TipoProducto
++ getCantKm():int
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>600</y>
+      <w>320</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>JuegoMesa
+--
+- cantJugadores: int
+- cantCartasDispo: int
+--
++ evaluar(): Estado
++ getTipoProducto():TipoProducto
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>600</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Electrodomestico
+--
+- indicadorUso: int
+--
++ evaluar(): Estado
++ getTipoProducto():TipoProducto
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>490</y>
+      <w>330</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bg=GREEN</panel_attributes>
+    <additional_attributes>310.0;10.0;310.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>490</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>490</y>
+      <w>400</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bg=GREEN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;380.0;60.0;380.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>80</y>
+      <w>480</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Fabrica
+--
+_+CANT_ESTADOS=Estado.values().length:int_
+_+CANT_TIPOS_PROD=TipoProducto.values().length:int_
+--
++promedioKmsHastaMantenimiento(): double
++obtenerResultadosDeEvaluacion(): PilaProducto[]
++obtenerCantDeProductosXEstado():int[][]
+- inicializarVector():PilaProducto[]
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>300</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Pila&gt;&gt;
+PilaProducto
+--
++ PilaNodos()
++ PilaNodos(int)
++ push(T): void
++ peek(): T
++ pop(): T
++ isEmpty(): boolean
++ isFull(): boolean
+
+bg=PINK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>260</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+- productosAEvaluar</panel_attributes>
+    <additional_attributes>240.0;140.0;70.0;140.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>380</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>30</y>
+      <w>920</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>900.0;280.0;900.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>200</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>300.0;110.0;300.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>370</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+TipoProducto
+--
+_+ELECTRODOMESTICO_
+_+JUEGO_MESA_
+_+VEHICULO_
+bg=MAGENTA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>260</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>100</x>
+      <y>460</y>
+      <w>710</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;690.0;60.0;690.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1200</x>
+      <y>430</y>
+      <w>290</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;10.0;270.0;380.0;70.0;380.0;70.0;360.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>400</y>
+      <w>680</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>320.0;10.0;660.0;10.0;660.0;440.0;10.0;440.0;10.0;390.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>370</y>
+      <w>1040</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>610.0;10.0;1020.0;10.0;1020.0;500.0;10.0;500.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>970</x>
+      <y>140</y>
+      <w>160</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+
+//uso</panel_attributes>
+    <additional_attributes>140.0;170.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -130,7 +130,7 @@ bg=GREEN</panel_attributes>
       <w>210</w>
       <h>150</h>
     </coordinates>
-    <panel_attributes>ColaNodos&lt;T&gt;
+    <panel_attributes>ColaServicio
 --
 --
 + ColaNodos()

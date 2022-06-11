@@ -8,17 +8,17 @@ import ar.edu.ort.tdas.interfaces.*;
  */
 public class Edificio {
 
-    Cola<Factura>[] colaFacturas;
+    private ColaFacturas[] colaFacturas;
 
 
     public Edificio() {
-        colaFacturas = new Cola[Servicio.values().length];
+        colaFacturas = new ColaFacturas[Servicio.values().length];
         llenarColas();
     }
 
     private void llenarColas() {
         for (int i = 0; i < Servicio.values().length; i++) {
-            colaFacturas[i] = new ColaNodos<>();
+            colaFacturas[i] = new ColaFacturas();
         }
     }
 
